@@ -22,7 +22,7 @@
             android:id="@+id/code"
             android:layout_width="366dp"
             android:layout_height="611dp"
-            android:text="@string/Transpose_code"
+            android:text="@string/antiSpiralcode"
             android:textColor="#000"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -35,11 +35,11 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/TransposeHeading"
+        android:id="@+id/AntiSpiralHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:text="@string/transpose_heading"
+        android:text="@string/antiSpiral_Heading"
         android:textColor="#FFF"
         android:textSize="30sp"
         android:textStyle="bold"

@@ -14,28 +14,30 @@ public class MainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
     }
 
-    public void name(View view){
+    public void Transpose(View view){
         Intent intent = new Intent(this, Transpose.class);
         startActivity(intent);
     }
-/*
-    public void name(View view){
-        Intent intent = new Intent(this, classname.class);
+
+    public void ZigZag(View view){
+        Intent intent = new Intent(this, ZigZag.class);
         startActivity(intent);
     }
 
-    public void name(View view){
-        Intent intent = new Intent(this, classname.class);
+    public void Rotate(View view){
+        Intent intent = new Intent(this, Rotate.class);
         startActivity(intent);
     }
-    public void name(View view){
-        Intent intent = new Intent(this, classname.class);
+    public void Spiral(View view){
+        Intent intent = new Intent(this, Spiral.class);
         startActivity(intent);
     }
-    public void name(View view){
-        Intent intent = new Intent(this, classname.class);
+
+    public void AntiSpiral(View view){
+        Intent intent = new Intent(this, AntiSpiral.class);
         startActivity(intent);
     }
+    /*
     public void name(View view){
         Intent intent = new Intent(this, classname.class);
         startActivity(intent);

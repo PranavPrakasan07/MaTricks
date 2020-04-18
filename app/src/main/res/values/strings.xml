@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">MaTricks</string>
     <string name="TapButton">Tap Anywhere to Continue</string>
-    <string name="code">
-
+    <string name="Transpose_code">
+        
 #include&lt;iostream&gt;\n
 \n
 using namespace std;\n
@@ -56,5 +56,342 @@ int main()\n
 }\n
 </string>
     <string name="transpose_heading">Transpose of a Matrix</string>
+    <string name="codezigzag">
 
+#include&lt;iostream&gt;	\n
+#include&lt;vector&gt;												\n
+												\n
+using namespace std;												\n
+												\n
+vector&lt;vector&lt;int&gt;&gt; matrix {{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};												\n
+												\n
+void display()												\n
+{												\n
+    for(int i=0;i&lt;matrix.size();i+=1)												\n
+    {												\n
+        for(int j=0;j&lt;matrix[0].size();j+=1)												\n
+        {												\n
+            cout&lt;&lt;matrix[i][j]&lt;&lt;"\t";												\n
+        }												\n
+        cout&lt;&lt;endl;												\n
+    }												\n
+}												\n
+												\n
+int main()												\n
+{												\n
+    int j = 0;												\n
+    int counter = 0;												\n
+												\n
+    display();												\n
+												\n
+    cout&lt;&lt;endl&lt;&lt;endl;												\n
+												\n
+    for(int i=0;i&lt;matrix.size();i+=1)												\n
+    {												\n
+        if(i%2 == 0)												\n
+        {												\n
+            for(int j=0;j&lt;matrix[0].size();j+=1)												\n
+            {												\n
+                cout&lt;&lt;matrix[i][j]&lt;&lt;" ";												\n
+            }												\n
+        }												\n
+												\n
+        else												\n
+        {												\n
+            for(int j=matrix[0].size()-1;j>=0;j-=1)												\n
+            {												\n
+                cout&lt;&lt;matrix[i][j]&lt;&lt;" ";												\n
+            }												\n
+        }												\n
+												\n
+        counter++;												\n
+												\n
+    }												\n
+												\n
+    return 0;												\n
+}												\n
+												\n
+</string>
+    <string name="ZigZag_heading">Zig Zag Traversal</string>
+    <string name="Spiral_heading">Print Spiral</string>
+    <string name="Spiralcode">
+        
+        #include&lt;iostream>												\n
+#include&lt;vector>												\n
+												\n
+using namespace std;												\n
+												\n
+vector&lt;vector&lt;int>> matrix {{1,2,3,4,5},{11,21,31,41,51},{12,22,32,42,52},{121,222,323,425,452},{10,20,30,40,50}};												\n
+												\n
+void transpose()												\n
+{												\n
+    int temp;												\n
+												\n
+    for(int i=0;i&lt;matrix.size();i++)												\n
+    {												\n
+        for(int j=i;j&lt;matrix[0].size();j++)												\n
+        {												\n
+            temp = matrix[i][j];												\n
+            matrix[i][j] = matrix[j][i];												\n
+            matrix[j][i] = temp;												\n
+        }												\n
+    }												\n
+												\n
+}												\n
+												\n
+void display()												\n
+{												\n
+    for(int i=0;i&lt;matrix.size();i++)												\n
+    {												\n
+        for(int j=0;j&lt;matrix[0].size();j++)												\n
+        {												\n
+            cout&lt;&lt;matrix[i][j]&lt;&lt;"\t";												\n
+        }												\n
+        cout&lt;&lt;endl;												\n
+    }												\n
+}												\n
+												\n
+void rotate90()												\n
+{												\n
+    int temp;												\n
+												\n
+    transpose();												\n
+												\n
+    for(int i=0;i&lt;matrix.size();i++)												\n
+    {												\n
+        for(int j=0;j&lt;matrix[0].size()/2;j++)												\n
+        {												\n
+            temp = matrix[i][j];												\n
+            matrix[i][j] = matrix[i][matrix[0].size() - j - 1];												\n
+            matrix[i][matrix[0].size() - j - 1] = temp;												\n
+        }												\n
+    }												\n
+												\n
+}												\n
+												\n
+void printLine()												\n
+{												\n
+    for(int i=0;i&lt;matrix[0].size()-1;i++)												\n
+    {												\n
+        cout&lt;&lt;matrix[0][i]&lt;&lt;" -> ";												\n
+    }												\n
+												\n
+    for(int i=0;i&lt;matrix.size();i++)												\n
+    {												\n
+        cout&lt;&lt;matrix[i][matrix[i].size()-1]&lt;&lt;" -> ";												\n
+        matrix[i].erase(matrix[i].begin() + matrix[i].size()-1, matrix[i].begin() + matrix[i].size());												\n
+    }												\n
+												\n
+    matrix.erase(matrix.begin(), matrix.begin() + 1);												\n
+												\n
+}												\n
+												\n
+int main()												\n
+{												\n
+    cout&lt;&lt;"MATRIX : "&lt;&lt;endl;												\n
+    display();												\n
+												\n
+    cout&lt;&lt;endl&lt;&lt;"SPIRAL PRINTING : "&lt;&lt;endl;												\n
+												\n
+    while(matrix.size() != 0)												\n
+    {												\n
+        printLine();												\n
+        rotate90();												\n
+        rotate90();												\n
+    }												\n
+												\n
+    return 0;												\n
+}												\n
+												\n
+        
+    </string>
+
+    <string name="antiSpiral_Heading">Printing Anti-Spiral</string>
+    <string name="antiSpiralcode">
+
+#include&lt;iostream&gt;										\n
+#include&lt;vector&gt;										\n
+#include&lt;stack&gt;										\n
+										\n
+using namespace std;										\n
+										\n
+vector&lt;vector&lt;int&gt;&gt; matrix {{1,2,3,4,5},\n{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};\n										\n
+stack &lt;int&gt; stackSpiral;										\n
+										\n
+void transpose()										\n
+{										\n
+    int temp;										\n
+										\n
+    for(int i=0;i&lt;matrix.size();i++)										\n
+    {										\n
+        for(int j=i;j&lt;matrix[0].size();j++)										\n
+        {										\n
+            temp = matrix[i][j];										\n
+            matrix[i][j] = matrix[j][i];										\n
+            matrix[j][i] = temp;										\n
+        }										\n
+    }										\n
+										\n
+}										\n
+										\n
+void display()										\n
+{										\n
+    for(int i=0;i&lt;matrix.size();i++)										\n
+    {										\n
+        for(int j=0;j&lt;matrix[0].size();j++)										\n
+        {										\n
+            cout&lt;&lt;matrix[i][j]&lt;&lt;"\t";										\n
+        }										\n
+        cout&lt;&lt;endl;										\n
+    }										\n
+}										\n
+										\n
+void rotate90()										\n
+{										\n
+    int temp;										\n
+										\n
+    transpose();										\n
+										\n
+    for(int i=0;i&lt;matrix.size();i++)										\n
+    {										\n
+        for(int j=0;j&lt;matrix[0].size()/2;j++)										\n
+        {										\n
+            temp = matrix[i][j];										\n
+            matrix[i][j] = matrix[i][matrix[0].size() - j - 1];										\n
+            matrix[i][matrix[0].size() - j - 1] = temp;										\n
+        }										\n
+    }										\n
+										\n
+}										\n
+										\n
+void printLine()										\n
+{										\n
+    for(int i=0;i&lt;matrix[0].size()-1;i++)										\n
+    {										\n
+        stackSpiral.push(matrix[0][i]);										\n
+    }										\n
+										\n
+    for(int i=0;i&lt;matrix.size();i++)										\n
+    {										\n
+        stackSpiral.push(matrix[i][matrix[i].size()-1]);										\n
+        matrix[i].erase(matrix[i].begin() + matrix[i].size()-1, matrix[i].begin() + matrix[i].size());										\n
+    }										\n
+										\n
+    matrix.erase(matrix.begin(), matrix.begin() + 1);										\n
+										\n
+}										\n
+										\n
+int main()										\n
+{										\n
+    cout&lt;&lt;"MATRIX : "&lt;&lt;endl;										\n
+    display();										\n
+										\n
+    cout&lt;&lt;endl&lt;&lt;"SPIRAL PRINTING : "&lt;&lt;endl;										\n
+										\n
+    while(matrix.size() != 0)										\n
+    {										\n
+        printLine();										\n
+        rotate90();										\n
+        rotate90();										\n
+    }										\n
+										\n
+    cout&lt;&lt;endl;										\n
+										\n
+    while(stackSpiral.empty()!= true)										\n
+    {										\n
+        cout&lt;&lt;stackSpiral.top()&lt;&lt;" -> ";										\n
+        stackSpiral.pop();										\n
+    }										\n
+										\n
+    return 0;										\n
+}										\n
+										\n
+
+    </string>
+
+    <string name="rotate_heading">Rotate Matrix</string>
+    <string name="rotatecode">
+
+#include&lt;iostream&gt;								\n
+#include&lt;vector&gt;								\n
+								\n
+using namespace std;								\n
+								\n
+int row = 4, col = 5;								\n
+int matrix[4][5] = {{1,2,3,4,5},{11,21,31,41,51},{12,22,32,42,52},{121,222,323,425,452},};								\n
+								\n
+void transpose()								\n
+{								\n
+    int temp;								\n
+								\n
+    for(int i=0;i&lt;row;i++)								\n
+    {								\n
+        for(int j=i;j&lt;col;j++)								\n
+        {								\n
+            temp = matrix[i][j];								\n
+            matrix[i][j] = matrix[j][i];								\n
+            matrix[j][i] = temp;								\n
+        }								\n
+    }								\n
+								\n
+    temp = col;								\n
+    col = row;								\n
+    row = temp;								\n
+}								\n
+								\n
+void display()								\n
+{								\n
+    for(int i=0;i&lt;row;i++)								\n
+    {								\n
+        for(int j=0;j&lt;col;j++)								\n
+        {								\n
+            cout&lt;&lt;matrix[i][j]&lt;&lt;"\t";								\n
+        }								\n
+								\n
+        cout&lt;&lt;endl;								\n
+    }								\n
+}								\n
+								\n
+int main()								\n
+{								\n
+    int temp;								\n
+    cout&lt;&lt;"MATRIX : "&lt;&lt;endl;								\n
+    display();								\n
+								\n
+    transpose();								\n
+								\n
+    cout&lt;&lt;"\nTRANSPOSE MATRIX : "&lt;&lt;endl;								\n
+    display();								\n
+								\n
+    for(int i=0;i&lt;row;i++)								\n
+    {								\n
+        for(int j=0;j&lt;col/2;j++)								\n
+        {								\n
+            temp = matrix[i][j];								\n
+            matrix[i][j] = matrix[i][col - j - 1];								\n
+            matrix[i][col - j - 1] = temp;								\n
+        }								\n
+    }								\n
+								\n
+    cout&lt;&lt;endl;								\n
+    cout&lt;&lt;"ROTATED MATRIX : ";								\n
+    cout&lt;&lt;endl;								\n
+								\n
+    display();								\n
+								\n
+    return 0;								\n
+}								\n
+
+
+    </string>
+    <string name="see_list_button">see list</string>
+    <string name="try_random_button">try random</string>
+    <string name="rotate_90_button">Rotate 90</string>
+    <string name="anti_spiral_printing_button">Anti-Spiral Printing</string>
+    <string name="spiral_printing_button">Spiral Printing</string>
+    <string name="zig_zag_printing_button">Zig-Zag Printing</string>
+    <string name="transpose_button">Transpose</string>
+    <string name="button_1">Button</string>
+    <string name="button_2">Button</string>
+    <string name="button_3">Button</string>
 </resources>
