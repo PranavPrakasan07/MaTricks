@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">MaTricks</string>
+    <string name="TapButton">Tap Anywhere to Continue</string>
+    <string name="code">
+
+#include&lt;iostream&gt;\n
+\n
+using namespace std;\n
+\n
+int row = 3, col = 4;\n
+int matrix[3][4] = {{1,2,3,4},{11,21,31,41},\n{12,22,32,42}};\n
+\n
+void transpose()\n
+{\n
+    int temp;\n
+\n
+        for(int i=0;i&lt;row;i++)\n
+    {\n
+        for(int j=i;j&lt;col;j++)\n
+        {\n
+            temp = matrix[i][j];\n
+            matrix[i][j] = matrix[j][i];\n
+            matrix[j][i] = temp;\n
+        }\n
+    }\n
+\n
+    temp = col;\n
+    col = row;\n
+    row = temp;\n
+}\n
+\n
+void display()\n
+{\n
+    for(int i=0;i&lt;row;i++)\n
+    {\n
+        for(int j=0;j&lt;col;j++)\n
+        {\n
+            coutmatrix[i][j]"\t";\n
+        }\n
+\n
+        cout&lt;&lt;endl;\n
+    }\n
+}\n
+\n
+int main()\n
+{\n
+    cout&lt;&lt;"MATRIX : "&lt;&lt;endl;\n
+    display();\n
+\n
+    transpose();\n
+\n
+    cout"&lt;&lt;"TRANSPOSE MATRIX : "&lt;&lt;endl;\n
+    display();\n
+\n
+    return 0;\n
+}\n
+</string>
+    <string name="transpose_heading">Transpose of a Matrix</string>
+
+</resources>
