@@ -63,7 +63,7 @@ int main()\n
 												\n
 using namespace std;												\n
 												\n
-vector&lt;vector&lt;int&gt;&gt; matrix {{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};												\n
+vector&lt;vector&lt;int&gt;&gt; matrix {{1,2,3,4,5},\n{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};												\n
 												\n
 void display()												\n
 {												\n
@@ -121,7 +121,7 @@ int main()												\n
 												\n
 using namespace std;												\n
 												\n
-vector&lt;vector&lt;int>> matrix {{1,2,3,4,5},{11,21,31,41,51},{12,22,32,42,52},{121,222,323,425,452},{10,20,30,40,50}};												\n
+vector&lt;vector&lt;int>> matrix {{1,2,3,4,5},\n{11,21,31,41,51},{12,22,32,42,52},{121,222,323,425,452},{10,20,30,40,50}};												\n
 												\n
 void transpose()												\n
 {												\n
