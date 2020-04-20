@@ -394,4 +394,9 @@ int main()								\n
     <string name="button_1">Button</string>
     <string name="button_2">Button</string>
     <string name="button_3">Button</string>
+    <string name="i_m_a_programmer_text">I\'m a Programmer…</string>
+    <string name="i_want_learn_more_text">I want learn more about these…</string>
+    <string name="tell_us_who_you_are_heading">Tell Us Who You Are …</string>
+    <string name="random_description">{ } : Try a random topic. Click on the button to see today\'s bit of Ma-t-ricks code</string>
+    <string name="see_list">{ } : Choose your topic. Click on the button to see a list of Ma-t-ricks code</string>
 </resources>

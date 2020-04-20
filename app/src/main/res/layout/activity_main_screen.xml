@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/rotate90"
         android:layout_width="375dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -20,13 +20,13 @@
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintBottom_toTopOf="@+id/transpose"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/antispiralprinting"
         android:layout_width="375dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -37,13 +37,13 @@
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/rotate90"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/spiralprinting"
         android:layout_width="375dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -54,13 +54,13 @@
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/antispiralprinting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/zigzagprinting"
         android:layout_width="375dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -71,7 +71,7 @@
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/spiralprinting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
@@ -87,7 +87,7 @@
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/zigzagprinting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
@@ -124,7 +124,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/transpose"
         android:layout_width="375dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"

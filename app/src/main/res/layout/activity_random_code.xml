@@ -9,32 +9,64 @@
 
     <Button
         android:id="@+id/randomButton"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="232dp"
-        android:background="#044D87"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/custom_button1"
         android:onClick="seeRandom"
         android:text="@string/try_random_button"
         android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/seelistButton"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="236dp"
-        android:background="#044D87"
+        android:background="@drawable/custom_button1"
         android:onClick="seeList"
         android:text="@string/see_list_button"
         android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/randomButton"
-        app:layout_constraintVertical_bias="0.589" />
+        app:layout_constraintVertical_bias="0.866" />
+
+    <TextView
+        android:id="@+id/seeRandom"
+        android:layout_width="191dp"
+        android:layout_height="167dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/random_description"
+        android:textAlignment="gravity"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <TextView
+        android:id="@+id/seeList"
+        android:layout_width="182dp"
+        android:layout_height="185dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/see_list"
+        android:textAlignment="gravity"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
