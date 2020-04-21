@@ -463,5 +463,9 @@ int main()										\n
 										\n
     </string>
     <string name="back_button_random">I think I\'ll switch</string>
+    <string name="welcome1">Hi, I\'ll get you acquainted with the setup</string>
+    <string name="welcome2">Great to see you back again !</string>
+    <string name="see_assistant_button">See Assistant</string>
+    <string name="message_headertouch">{ } : And, you can move back to the previous page by clicking once in the header</string>
 
 </resources>

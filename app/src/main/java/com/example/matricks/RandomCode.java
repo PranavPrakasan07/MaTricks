@@ -3,10 +3,10 @@ package com.example.matricks;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Random;
@@ -18,6 +18,42 @@ public class RandomCode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_code);
 
+
+
+        final Button button = findViewById(R.id.coderAssist1);
+        final Button button1 = findViewById(R.id.coderAssist2);
+        final Button button2 = findViewById(R.id.viewassistant);
+        final TextView textView = findViewById(R.id.welcome1);
+        final TextView textView1 = findViewById(R.id.welcome2);
+
+        button.setVisibility(View.VISIBLE);
+        button1.setVisibility(View.INVISIBLE);
+        button2.setVisibility(View.INVISIBLE);
+
+        textView.setVisibility(View.VISIBLE);
+        textView1.setVisibility(View.INVISIBLE);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button.setVisibility(View.INVISIBLE);
+                button1.setVisibility(View.INVISIBLE);
+                button2.setVisibility(View.VISIBLE);
+                textView.setVisibility(View.INVISIBLE);
+                textView1.setVisibility(View.INVISIBLE);
+
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView.setVisibility(View.INVISIBLE);
+                textView1.setVisibility(View.VISIBLE);
+                button1.setVisibility(View.VISIBLE);
+                button2.setVisibility(View.INVISIBLE);
+            }
+        });
     }
 
     public void goToHomePage(View view){
@@ -63,8 +99,6 @@ public class RandomCode extends AppCompatActivity {
                 intent = new Intent(this, Transpose.class);
                 startActivity(intent);
                 break;
-
-
         }
     }
 }
