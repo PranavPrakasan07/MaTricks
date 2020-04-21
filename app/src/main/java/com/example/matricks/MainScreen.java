@@ -40,11 +40,13 @@ public class MainScreen extends AppCompatActivity {
         Intent intent = new Intent(this, AntiSpiral.class);
         startActivity(intent);
     }
-    /*
-    public void name(View view){
-        Intent intent = new Intent(this, classname.class);
+
+    public void ZPrinting(View view){
+        Intent intent = new Intent(this, ZPrinting.class);
         startActivity(intent);
     }
+
+    /*
     public void name(View view){
         Intent intent = new Intent(this, classname.class);
         startActivity(intent);

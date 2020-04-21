@@ -393,7 +393,7 @@ int main()								\n
     <string name="transpose_button">Transpose</string>
     <string name="button_1">Button</string>
     <string name="button_2">Button</string>
-    <string name="button_3">Button</string>
+    <string name="button_3">Z Printing</string>
     <string name="i_m_a_programmer_text">I\'m a PROGRAMMER…</string>
     <string name="i_want_learn_more_text">I\'m a LEARNER…</string>
     <string name="tell_us_who_you_are_heading">Who You Are</string>
@@ -410,4 +410,56 @@ int main()								\n
     <string name="code_zigzag">Hi</string>
     <string name="codeAntiSpiral">Hi</string>
     <string name="code_Transpose">Hi</string>
+    <string name="code_ZPrinting">Hi</string>
+    <string name="z_printing_heading">Z-Printing</string>
+    <string name="ZPcode">
+
+#include&lt;iostream&gt;										\n
+#include&lt;vector&gt;										\n
+										\n
+using namespace std;										\n
+										\n
+vector &lt;vector &lt;int&gt;&gt; matrix{{1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15},{16,17,18,19,20},{21,22,23,24,25}};										\n
+										\n
+int main()										\n
+{										\n
+    int i=0;										\n
+    int j=-1;										\n
+    int lastRow = matrix[ matrix.size() - 1 ].size() - 1;										\n
+										\n
+    /* You can however index the row with \'0\' as well since we consider square matrices */										\n
+										\n
+    for(int r=0; r&lt;matrix.size(); r++)										\n
+    {										\n
+        for(int c = 0; c&lt;matrix[0].size(); c++)										\n
+        {										\n
+            cout&lt;&lt;matrix[r][c]&lt;&lt;"\t";										\n
+        }										\n
+        cout&lt;&lt;endl;										\n
+    }										\n
+    cout&lt;&lt;endl;										\n
+										\n
+										\n
+    for(i=0;i&lt;matrix[0].size();i++)										\n
+    {										\n
+        cout&lt;&lt;matrix[0][i]&lt;&lt;" ";										\n
+    }										\n
+										\n
+    while(i>0)										\n
+    {										\n
+        cout&lt;&lt;matrix[j+=1][i-=1]&lt;&lt;" ";										\n
+    }										\n
+										\n
+    for(int c=1; c &lt; lastRow + 1 ; c++)										\n
+    {										\n
+        cout&lt;&lt;matrix[lastRow][c]&lt;&lt;" ";										\n
+    }										\n
+										\n
+    cout&lt;&lt;endl;										\n
+										\n
+    return 0;										\n
+}										\n
+										\n
+    </string>
+
 </resources>
