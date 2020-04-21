@@ -11,13 +11,13 @@
         android:id="@+id/randomButton"
         android:layout_width="135dp"
         android:layout_height="60dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="260dp"
         android:background="@drawable/custom_button1"
         android:onClick="seeRandom"
         android:text="@string/try_random_button"
         android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,10 +32,10 @@
         android:textColor="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/randomButton"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/seeRandom"

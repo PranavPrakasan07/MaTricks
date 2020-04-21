@@ -8,14 +8,15 @@
     tools:context=".ZigZag">
 
     <ScrollView
-        android:layout_width="278dp"
-        android:layout_height="397dp"
+        android:id="@+id/scrollerid"
+        android:layout_width="272dp"
+        android:layout_height="354dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747">
+        app:layout_constraintVertical_bias="0.586">
 
         <TextView
             android:id="@+id/codezigzag"
@@ -31,20 +32,78 @@
 
     </ScrollView>
 
+    <Button
+        android:id="@+id/zigzaghint"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_button1"
+        android:text="@string/hint_code_button"
+        android:onClick="hintZigZag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <Button
+        android:id="@+id/zigzagapproach"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_button1"
+        android:text="@string/approach_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+
     <TextView
+        android:id="@+id/problemZigZag"
+        android:layout_width="298dp"
+        android:layout_height="407dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/code_zigzag"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
+    <Button
+        android:id="@+id/hideCodeZigZag"
+        style="@style/buttons"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:text="@string/hide_code_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <Button
         android:id="@+id/ZigZagHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_horizontal|center_vertical"
         android:padding="5dp"
         android:text="@string/ZigZag_heading"
+        android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintVertical_bias="0.054" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

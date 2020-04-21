@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttons">
+
+        <item name="android:background">#ff5252</item>
+        <item name="android:radius">100dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+
+    </style>
+
+
+</resources>

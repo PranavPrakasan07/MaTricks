@@ -9,14 +9,14 @@
 
     <ScrollView
         android:id="@+id/scrollerid"
-        android:layout_width="298dp"
-        android:layout_height="415dp"
+        android:layout_width="294dp"
+        android:layout_height="324dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803">
+        app:layout_constraintVertical_bias="0.595">
 
         <TextView
             android:id="@+id/code"
@@ -34,19 +34,79 @@
 
     </ScrollView>
 
+    <Button
+        android:id="@+id/hintTransposeButton"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_button1"
+        android:text="@string/hint_code_button"
+        android:onClick="hintTranspose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <Button
+        android:id="@+id/approachTransposeButton"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_button1"
+        android:text="@string/approach_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+
     <TextView
+        android:id="@+id/problemTranspose"
+        android:layout_width="301dp"
+        android:layout_height="402dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/code_Transpose"
+        android:textAlignment="gravity"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
+    <Button
+        android:id="@+id/hideCodeTranspose"
+        style="@style/buttons"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:text="@string/hide_code_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+    <Button
         android:id="@+id/TransposeHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="389dp"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_horizontal|center_vertical"
         android:padding="5dp"
         android:text="@string/transpose_heading"
+        android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.056" />
+        app:layout_constraintVertical_bias="0.067" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

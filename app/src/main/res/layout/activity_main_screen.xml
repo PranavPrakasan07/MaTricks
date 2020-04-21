@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
+    android:background="@drawable/background6"
     tools:context=".MainScreen">
 
 
@@ -127,7 +127,7 @@
         android:id="@+id/transpose"
         android:layout_width="375dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/custom_button"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="Transpose"
