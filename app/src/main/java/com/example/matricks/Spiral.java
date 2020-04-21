@@ -2,6 +2,7 @@ package com.example.matricks;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -34,7 +35,15 @@ public class Spiral extends AppCompatActivity {
                 button1.setVisibility(View.VISIBLE);
                 textView.setVisibility(View.INVISIBLE);
 
-                return false;
+                return true;
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Spiral.this, RandomCode.class);
+                startActivity(intent);
             }
         });
 

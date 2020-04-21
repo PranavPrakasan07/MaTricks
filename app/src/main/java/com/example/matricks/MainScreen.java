@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Random;
+
 public class MainScreen extends AppCompatActivity {
 
     @Override
@@ -46,10 +48,10 @@ public class MainScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /*
-    public void name(View view){
-        Intent intent = new Intent(this, classname.class);
+
+    public void previousPage(View view){
+        Intent intent = new Intent(this, RandomCode.class);
         startActivity(intent);
     }
-*/
+
 }

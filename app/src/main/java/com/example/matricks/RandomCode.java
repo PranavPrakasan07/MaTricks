@@ -20,6 +20,12 @@ public class RandomCode extends AppCompatActivity {
 
     }
 
+    public void goToHomePage(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+
     public void seeList(View view){
 
         Intent intent = new Intent(this, MainScreen.class);
