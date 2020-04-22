@@ -5,39 +5,36 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-import java.util.Random;
-
-public class MainScreen extends AppCompatActivity {
+public class MainScreen2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen);
+        setContentView(R.layout.activity_main_screen2);
     }
 
-    public void Transpose(View view){
-        Intent intent = new Intent(this, Transpose.class);
+    public void SwapMajorDiagonal(View view){
+        Intent intent = new Intent(MainScreen2.this, MajorDiagonalSwap.class);
         startActivity(intent);
     }
 
-    public void ZigZag(View view){
-
-
-        Intent intent = new Intent(this, ZigZag.class);
+    public void SwapMinorDiagonal(View view){
+        Intent intent = new Intent(MainScreen2.this, MinorDiagonalSwap.class);
         startActivity(intent);
     }
 
-    public void Rotate(View view){
-        Intent intent = new Intent(this, Rotate.class);
-        startActivity(intent);
-    }
-    public void Spiral(View view){
-        Intent intent = new Intent(this, Spiral.class);
+    public void SwapDiagonal(View view){
+        Intent intent = new Intent(MainScreen2.this, Rotate.class);
         startActivity(intent);
     }
 
+
+    public void OddMSquare(View view){
+        Intent intent = new Intent(MainScreen2.this, OddMagicSquare.class);
+        startActivity(intent);
+    }
+/*
     public void AntiSpiral(View view){
         Intent intent = new Intent(this, AntiSpiral.class);
         startActivity(intent);
@@ -52,14 +49,11 @@ public class MainScreen extends AppCompatActivity {
         Intent intent = new Intent(this, MinorDiagonalSwap.class);
         startActivity(intent);
     }
-
+*/
     public void previousPage(View view){
-        Intent intent = new Intent(this, RandomCode.class);
+        Intent intent = new Intent(MainScreen2.this, MainScreen.class);
         startActivity(intent);
     }
 
-    public void nextPage(View view){
-        Intent intent = new Intent(this, MainScreen2.class);
-        startActivity(intent);
-    }
+
 }

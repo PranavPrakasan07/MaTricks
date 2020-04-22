@@ -18,8 +18,6 @@ public class RandomCode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_code);
 
-
-
         final Button button = findViewById(R.id.coderAssist1);
         final Button button1 = findViewById(R.id.coderAssist2);
         final Button button2 = findViewById(R.id.viewassistant);

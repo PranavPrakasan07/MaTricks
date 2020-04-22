@@ -9,14 +9,14 @@
 
     <ScrollView
         android:id="@+id/scrollerid"
-        android:layout_width="294dp"
-        android:layout_height="324dp"
+        android:layout_width="305dp"
+        android:layout_height="347dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.595">
+        app:layout_constraintVertical_bias="0.576">
 
         <TextView
             android:id="@+id/code"
@@ -92,7 +92,7 @@
 
     <Button
         android:id="@+id/TransposeHeading"
-        android:layout_width="380dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/custom_button1"
         android:gravity="center_horizontal|center_vertical"
@@ -100,7 +100,7 @@
         android:text="@string/transpose_heading"
         android:textAlignment="gravity"
         android:textColor="#FFF"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

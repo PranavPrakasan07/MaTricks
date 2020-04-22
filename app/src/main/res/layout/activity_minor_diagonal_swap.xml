@@ -5,49 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background5"
-    tools:context=".Spiral">
+    tools:context=".MinorDiagonalSwap">
 
     <ScrollView
         android:id="@+id/scrollerid"
-        android:layout_width="268dp"
-        android:layout_height="328dp"
+        android:layout_width="303dp"
+        android:layout_height="344dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598">
+        app:layout_constraintVertical_bias="0.593">
 
         <TextView
-            android:id="@+id/oddmsquare"
-            android:layout_width="310dp"
-            android:layout_height="425dp"
-            android:text="@string/Spiralcode"
+            android:id="@+id/minorcode"
+            android:layout_width="366dp"
+            android:layout_height="611dp"
+            android:text="@string/minorcode"
             android:textColor="#000"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
 
     </ScrollView>
 
-    <Button
-        android:id="@+id/hintSpiralButton"
-        android:layout_width="240dp"
-        android:layout_height="30dp"
-        android:background="@drawable/custom_button1"
-        android:text="@string/hint_code_button"
-        android:onClick="hintSpiral"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
 
     <Button
-        android:id="@+id/approachSpiralButton"
+        android:id="@+id/approachMinorSwapButton"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:background="@drawable/custom_button1"
@@ -59,12 +48,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.974" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:background="@drawable/custom_button1"
+        android:onClick="hintMinorSwap"
+        android:text="@string/hint_code_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
     <TextView
-        android:id="@+id/problemSpiral"
+        android:id="@+id/minorSwapProblem"
         android:layout_width="298dp"
         android:layout_height="407dp"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/spiral_code"
+        android:text="@string/minordiagonalproblem"
         android:textAlignment="gravity"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +78,7 @@
         app:layout_constraintVertical_bias="0.745" />
 
     <Button
-        android:id="@+id/hideCodeSpiral"
+        android:id="@+id/hideCodeMinorSwap"
         style="@style/buttons"
         android:layout_width="280dp"
         android:layout_height="40dp"
@@ -88,16 +91,16 @@
         app:layout_constraintVertical_bias="0.894" />
 
     <Button
-        android:id="@+id/spiralHeading"
+        android:id="@+id/minorSwap"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/custom_button1"
         android:gravity="center_horizontal|center_vertical"
         android:padding="5dp"
-        android:text="@string/Spiral_heading"
+        android:text="@string/minorswapheading"
         android:textAlignment="gravity"
         android:textColor="#FFF"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

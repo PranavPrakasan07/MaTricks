@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/coder"
-        android:layout_width="202dp"
-        android:layout_height="178dp"
+        android:layout_width="199dp"
+        android:layout_height="180dp"
         android:background="@drawable/coder"
         android:onClick="coder"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,11 +22,11 @@
 
     <Button
         android:id="@+id/nerd"
-        android:layout_width="207dp"
+        android:layout_width="201dp"
         android:layout_height="208dp"
         android:background="@drawable/nerd"
-        android:text=""
         android:onClick="nerd"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.084"

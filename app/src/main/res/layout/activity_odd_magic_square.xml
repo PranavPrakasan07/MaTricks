@@ -5,40 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background5"
-    tools:context=".Spiral">
+    tools:context=".OddMagicSquare">
 
     <ScrollView
+
         android:id="@+id/scrollerid"
-        android:layout_width="268dp"
-        android:layout_height="328dp"
+        android:layout_width="298dp"
+        android:layout_height="342dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598">
+        app:layout_constraintVertical_bias="0.577">
 
         <TextView
-            android:id="@+id/oddmsquare"
-            android:layout_width="310dp"
-            android:layout_height="425dp"
-            android:text="@string/Spiralcode"
+            android:id="@+id/oddmcode"
+            android:layout_width="366dp"
+            android:layout_height="611dp"
+            android:text="@string/oddmagicsquarecode"
             android:textColor="#000"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75" />
 
     </ScrollView>
 
     <Button
-        android:id="@+id/hintSpiralButton"
+        android:id="@+id/OddMagicSquareHeading"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="@string/oddmagicsquareheading"
+        android:textAlignment="gravity"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <Button
+        android:id="@+id/hintOddMSquare"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:background="@drawable/custom_button1"
         android:text="@string/hint_code_button"
-        android:onClick="hintSpiral"
+        android:onClick="hintOddMagicSquare"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -47,7 +68,7 @@
         app:layout_constraintVertical_bias="0.203" />
 
     <Button
-        android:id="@+id/approachSpiralButton"
+        android:id="@+id/approachMSquare"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:background="@drawable/custom_button1"
@@ -60,11 +81,11 @@
         app:layout_constraintVertical_bias="0.974" />
 
     <TextView
-        android:id="@+id/problemSpiral"
+        android:id="@+id/problemMSquare"
         android:layout_width="298dp"
         android:layout_height="407dp"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/spiral_code"
+        android:text="@string/problemoddmagicsquare"
         android:textAlignment="gravity"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,7 +96,7 @@
         app:layout_constraintVertical_bias="0.745" />
 
     <Button
-        android:id="@+id/hideCodeSpiral"
+        android:id="@+id/hideCodeMSquare"
         style="@style/buttons"
         android:layout_width="280dp"
         android:layout_height="40dp"
@@ -86,23 +107,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.894" />
-
-    <Button
-        android:id="@+id/spiralHeading"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:background="@drawable/custom_button1"
-        android:gravity="center_horizontal|center_vertical"
-        android:padding="5dp"
-        android:text="@string/Spiral_heading"
-        android:textAlignment="gravity"
-        android:textColor="#FFF"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
