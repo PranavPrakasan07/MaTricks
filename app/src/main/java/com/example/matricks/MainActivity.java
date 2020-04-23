@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void nerd(View view)
     {
-        Toast.makeText(this, "Page under construction !!!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Taking you in !!!", Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, NerdConceptList.class);
+        startActivity(intent);
     }
 }

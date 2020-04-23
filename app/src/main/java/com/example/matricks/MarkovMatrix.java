@@ -11,17 +11,18 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AntiSpiral extends AppCompatActivity {
+public class MarkovMatrix extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anti_spiral);
+        setContentView(R.layout.activity_markov_matrix);
 
-        Button button = findViewById(R.id.StochMatrix);
+
+        Button button = findViewById(R.id.StochasticHead);
         final ScrollView scrollView = findViewById(R.id.scrollerid);
-        final Button button1 = findViewById(R.id.hideCodeAntiSpiral);
-        final TextView textView = findViewById(R.id.problemAntiSpiral);
+        final Button button1 = findViewById(R.id.hideStochastic);
+        final TextView textView = findViewById(R.id.problemStochastic);
 
         scrollView.setVisibility(View.INVISIBLE);
         button1.setVisibility(View.INVISIBLE);
@@ -42,7 +43,7 @@ public class AntiSpiral extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AntiSpiral.this, RandomCode.class);
+                Intent intent = new Intent(MarkovMatrix.this, RandomCode.class);
                 startActivity(intent);
             }
         });
@@ -55,11 +56,10 @@ public class AntiSpiral extends AppCompatActivity {
                 textView.setVisibility(View.VISIBLE);
             }
         });
-
-
     }
 
-    public void hintAntiSpiral(View view){
+
+    public void hintStochasticMatrix(View view){
 
         String s = "Try rotation of the matrix, and following a pattern. Try using a stack to reverse the spiral...";
 

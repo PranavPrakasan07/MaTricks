@@ -34,12 +34,12 @@ public class MainScreen2 extends AppCompatActivity {
         Intent intent = new Intent(MainScreen2.this, OddMagicSquare.class);
         startActivity(intent);
     }
-/*
-    public void AntiSpiral(View view){
-        Intent intent = new Intent(this, AntiSpiral.class);
+
+    public void MaxSumPathNC(View view){
+        Intent intent = new Intent(MainScreen2.this, MaxSumPath.class);
         startActivity(intent);
     }
-
+/*
     public void ZPrinting(View view){
         Intent intent = new Intent(this, ZPrinting.class);
         startActivity(intent);

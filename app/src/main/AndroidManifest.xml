@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OddMagicSquare"/>
+        <activity android:name=".MaxSumPath"/>
+        <activity android:name=".MarkovMatrix" />
+        <activity android:name=".NerdConceptList" />
+        <activity android:name=".OddMagicSquare" />
         <activity android:name=".MainScreen2" />
         <activity android:name=".MinorDiagonalSwap" />
         <activity android:name=".MajorDiagonalSwap" />

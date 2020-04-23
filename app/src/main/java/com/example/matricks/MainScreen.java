@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-
-import java.util.Random;
 
 public class MainScreen extends AppCompatActivity {
 
@@ -23,7 +20,6 @@ public class MainScreen extends AppCompatActivity {
     }
 
     public void ZigZag(View view){
-
 
         Intent intent = new Intent(this, ZigZag.class);
         startActivity(intent);
@@ -48,8 +44,8 @@ public class MainScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void MinorSwap(View view){
-        Intent intent = new Intent(this, MinorDiagonalSwap.class);
+    public void StochasticMatrix(View view){
+        Intent intent = new Intent(this, MarkovMatrix.class);
         startActivity(intent);
     }
 

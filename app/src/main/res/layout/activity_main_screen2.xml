@@ -10,7 +10,7 @@
 
     <Button
         android:id="@+id/rotate90"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button1"
@@ -25,13 +25,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/antispiralprinting"
-        android:layout_width="375dp"
+        android:id="@+id/MaxSumPathNC"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
         android:gravity="center_vertical|center_horizontal"
-        android:text=""
+        android:onClick="MaxSumPathNC"
+        android:text="@string/maxSumPathNCHeading"
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
@@ -42,33 +43,33 @@
 
     <Button
         android:id="@+id/oddmsquare"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button1"
         android:gravity="center_vertical|center_horizontal"
+        android:onClick="OddMSquare"
         android:text="@string/oddmagicsquareheading"
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        android:onClick="OddMSquare"
-        app:layout_constraintBottom_toTopOf="@+id/antispiralprinting"
+        app:layout_constraintBottom_toTopOf="@+id/MaxSumPathNC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/swapDiagonal"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
         android:gravity="center_vertical|center_horizontal"
+        android:onClick="SwapDiagonal"
         android:text="@string/swapheading"
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        android:onClick="SwapDiagonal"
         app:layout_constraintBottom_toTopOf="@+id/oddmsquare"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -76,16 +77,16 @@
 
     <Button
         android:id="@+id/swapMajor"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button1"
         android:gravity="center_vertical|center_horizontal"
+        android:onClick="SwapMajorDiagonal"
         android:text="@string/majorswapheading"
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        android:onClick="SwapMajorDiagonal"
         app:layout_constraintBottom_toTopOf="@+id/swapDiagonal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -93,7 +94,7 @@
 
     <Button
         android:id="@+id/minor_swap_button"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
@@ -110,15 +111,15 @@
 
     <Button
         android:id="@+id/back_button_seelist"
-        android:layout_width="375dp"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:background="@drawable/custom_button1"
+        android:background="@drawable/custom_button3"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="previousPage"
         android:text="@string/back_button"
         android:textAlignment="gravity"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/minor_swap_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,7 +130,7 @@
 
     <Button
         android:id="@+id/transpose"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="96dp"
         android:background="@drawable/custom_button"
@@ -145,15 +146,15 @@
 
     <Button
         android:id="@+id/front_button_seelist"
-        android:layout_width="375dp"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/custom_button1"
+        android:background="@drawable/custom_button2"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="previousPage"
         android:text="@string/front_button"
         android:textAlignment="gravity"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

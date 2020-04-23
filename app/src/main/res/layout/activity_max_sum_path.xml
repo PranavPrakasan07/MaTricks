@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background5"
-    tools:context=".AntiSpiral">
+    tools:context=".MaxSumPath">
 
     <ScrollView
         android:id="@+id/scrollerid"
@@ -22,7 +22,7 @@
             android:id="@+id/code"
             android:layout_width="366dp"
             android:layout_height="611dp"
-            android:text="@string/antiSpiralcode"
+            android:text="@string/maxSumPathNCcode"
             android:textColor="#000"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -36,7 +36,7 @@
 
 
     <Button
-        android:id="@+id/approachAntiSpiralButton"
+        android:id="@+id/approachMaxSumNCButton"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:background="@drawable/custom_button1"
@@ -49,11 +49,11 @@
         app:layout_constraintVertical_bias="0.974" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/hintMaxSumNC"
         android:layout_width="240dp"
         android:layout_height="30dp"
         android:background="@drawable/custom_button1"
-        android:onClick="hintAntiSpiral"
+        android:onClick="hintMaxSumPathNC"
         android:text="@string/hint_code_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,11 +63,11 @@
         app:layout_constraintVertical_bias="0.193" />
 
     <TextView
-        android:id="@+id/problemAntiSpiral"
+        android:id="@+id/problemMaxSumPathNC"
         android:layout_width="298dp"
         android:layout_height="407dp"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/codeAntiSpiral"
+        android:text="@string/problemMaxSumPathNC"
         android:textAlignment="gravity"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.745" />
 
     <Button
-        android:id="@+id/hideCodeAntiSpiral"
+        android:id="@+id/hideCodeMaxSumPathNC"
         style="@style/buttons"
         android:layout_width="280dp"
         android:layout_height="40dp"
@@ -91,13 +91,13 @@
         app:layout_constraintVertical_bias="0.894" />
 
     <Button
-        android:id="@+id/StochMatrix"
+        android:id="@+id/MaxSumPathheading"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/custom_button1"
         android:gravity="center_horizontal|center_vertical"
         android:padding="5dp"
-        android:text="@string/antiSpiral_Heading"
+        android:text="@string/maxSumPathNCHeading"
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="30sp"

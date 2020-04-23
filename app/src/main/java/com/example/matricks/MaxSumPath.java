@@ -11,17 +11,17 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AntiSpiral extends AppCompatActivity {
+public class MaxSumPath extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anti_spiral);
+        setContentView(R.layout.activity_max_sum_path);
 
-        Button button = findViewById(R.id.StochMatrix);
+        Button button = findViewById(R.id.MaxSumPathheading);
         final ScrollView scrollView = findViewById(R.id.scrollerid);
-        final Button button1 = findViewById(R.id.hideCodeAntiSpiral);
-        final TextView textView = findViewById(R.id.problemAntiSpiral);
+        final Button button1 = findViewById(R.id.hideCodeMaxSumPathNC);
+        final TextView textView = findViewById(R.id.problemMaxSumPathNC);
 
         scrollView.setVisibility(View.INVISIBLE);
         button1.setVisibility(View.INVISIBLE);
@@ -42,7 +42,7 @@ public class AntiSpiral extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AntiSpiral.this, RandomCode.class);
+                Intent intent = new Intent(MaxSumPath.this, RandomCode.class);
                 startActivity(intent);
             }
         });
@@ -56,10 +56,9 @@ public class AntiSpiral extends AppCompatActivity {
             }
         });
 
-
     }
 
-    public void hintAntiSpiral(View view){
+    public void hintMaxSumPathNC(View view){
 
         String s = "Try rotation of the matrix, and following a pattern. Try using a stack to reverse the spiral...";
 

@@ -23,7 +23,7 @@
     <Button
         android:id="@+id/nerd"
         android:layout_width="201dp"
-        android:layout_height="208dp"
+        android:layout_height="236dp"
         android:background="@drawable/nerd"
         android:onClick="nerd"
         android:text=""

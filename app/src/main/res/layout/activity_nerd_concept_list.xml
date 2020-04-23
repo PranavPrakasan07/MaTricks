@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context=".NerdConceptList">
+
+    <Button
+        android:id="@+id/back_button_seelist"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button3"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/back_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Stochastic_matrix_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/stochastic_matrix_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_button_seelist" />
+
+    <Button
+        android:id="@+id/hessenberg_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/hessenberg_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Stochastic_matrix_button" />
+
+    <Button
+        android:id="@+id/Idempotentbutton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/idempotent_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hessenberg_button" />
+
+    <Button
+        android:id="@+id/Involutory_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/involutory_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Idempotentbutton" />
+
+    <Button
+        android:id="@+id/Orthogonal_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/orthogonal_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Involutory_button" />
+
+    <Button
+        android:id="@+id/binarymatrix_button"
+        android:layout_width="318dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/binary_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Orthogonal_button" />
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button2"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/front_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Sparse_matrix_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/sparse_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/binarymatrix_button" />
+
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/stochiasticScroller"
+        android:layout_width="308dp"
+        android:layout_height="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <TextView
+            android:id="@+id/Stochastic_matrix_content"
+            android:layout_width="310dp"
+            android:layout_height="449dp"
+            android:text="@string/stochastic_content"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.766" />
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/hessenbergScroller"
+        android:layout_width="308dp"
+        android:layout_height="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <TextView
+            android:id="@+id/hessenberg_content"
+            android:layout_width="310dp"
+            android:layout_height="449dp"
+            android:text="@string/hessenberg_content"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.766" />
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/idempotentScroller"
+        android:layout_width="308dp"
+        android:layout_height="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <TextView
+            android:id="@+id/idempotent_content"
+            android:layout_width="310dp"
+            android:layout_height="449dp"
+            android:text="@string/idempotent_content"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.766" />
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/involutoryScroller"
+        android:layout_width="308dp"
+        android:layout_height="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <TextView
+            android:id="@+id/involutory_content"
+            android:layout_width="310dp"
+            android:layout_height="449dp"
+            android:text="@string/involutory_content"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.766" />
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/orthogonalScroller"
+        android:layout_width="308dp"
+        android:layout_height="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <TextView
+            android:id="@+id/orthogonal_content"
+            android:layout_width="310dp"
+            android:layout_height="449dp"
+            android:text="@string/orthogonal_content"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.766" />
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/binaryScroller"
+        android:layout_width="308dp"
+        android:layout_height="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <TextView
+            android:id="@+id/binary_content"
+            android:layout_width="310dp"
+            android:layout_height="449dp"
+            android:text="@string/binary_content"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.766" />
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/sparseScroller"
+        android:layout_width="308dp"
+        android:layout_height="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79">
+
+        <TextView
+            android:id="@+id/sparse_content"
+            android:layout_width="310dp"
+            android:layout_height="449dp"
+            android:text="@string/sparse_content"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.766" />
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,7 @@
 
     <Button
         android:id="@+id/rotate90"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button1"
@@ -26,8 +26,8 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/antispiralprinting"
-        android:layout_width="375dp"
+        android:id="@+id/StochMatrix"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
@@ -44,7 +44,7 @@
 
     <Button
         android:id="@+id/oddmsquare"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button1"
@@ -54,14 +54,14 @@
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/antispiralprinting"
+        app:layout_constraintBottom_toTopOf="@+id/StochMatrix"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/swapDiagonal"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
@@ -78,51 +78,49 @@
 
     <Button
         android:id="@+id/swapMajor"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button1"
         android:gravity="center_vertical|center_horizontal"
+        android:onClick="ZPrinting"
         android:text="@string/button_3"
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
-        android:onClick="ZPrinting"
         app:layout_constraintBottom_toTopOf="@+id/swapDiagonal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/minor_swap_button"
-        android:layout_width="375dp"
+        android:id="@+id/Stochastic_matrix"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/custom_button"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/minorswapheading"
-        android:onClick="MinorSwap"
+        android:onClick="StochasticMatrix"
+        android:text="@string/stochastic_matrix_heading"
         android:textAlignment="gravity"
         android:textColor="#FFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/swapMajor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_button_seelist"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/back_button_seelist"
-        android:layout_width="375dp"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/custom_button1"
+        android:background="@drawable/custom_button3"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="previousPage"
         android:text="@string/back_button"
         android:textAlignment="gravity"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
@@ -131,9 +129,9 @@
 
     <Button
         android:id="@+id/transpose"
-        android:layout_width="375dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/custom_button"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="Transpose"
@@ -148,15 +146,15 @@
 
     <Button
         android:id="@+id/front_button_seelist"
-        android:layout_width="375dp"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/custom_button1"
+        android:background="@drawable/custom_button2"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="nextPage"
         android:text="@string/front_button"
         android:textAlignment="gravity"
-        android:textColor="#FFF"
+        android:textColor="#000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

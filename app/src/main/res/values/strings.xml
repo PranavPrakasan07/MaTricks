@@ -779,6 +779,204 @@ int main()					\n
 
     </string>
 
-    TODO : Make activity for this.
+    <string name="maxSumPathNCHeading">Maximum Sum Path</string>
+    <string name="problemMaxSumPathNC">Hi</string>
+    <string name="maxSumPathNCcode">
+
+#include&lt;iostream&gt;										\n
+#include&lt;vector&gt;										\n
+										\n
+using namespace std;										\n
+										\n
+vector &lt;vector &lt;int&gt;&gt; pathMatrix {{12,3,45,2,56},{132,2,8,6,0},{2,67,0,11,9},{42,7,10,1,19},{20,6,8,14,123}};										\n
+										\n
+vector &lt;int&gt; maximumWeightPath;										\n
+										\n
+void printMatrix()										\n
+{										\n
+    for(int i=0;i&lt;pathMatrix.size();i++)										\n
+    {										\n
+        for(int j=0;j&lt;pathMatrix[i].size();j++)										\n
+        {										\n
+            cout&lt;&lt;pathMatrix[i][j]&lt;&lt;\" \";										\n
+        }										\n
+        cout&lt;&lt;endl;										\n
+    }										\n
+										\n
+    cout&lt;&lt;endl&lt;&lt;endl;										\n
+}										\n
+										\n
+void printPath()										\n
+{										\n
+    int pathWeight = 0;										\n
+										\n
+    cout&lt;&lt;\"START -&gt; \";										\n
+										\n
+    for(int i=0;i&lt;maximumWeightPath.size();i++)										\n
+    {										\n
+        cout&lt;&lt;maximumWeightPath[i]&lt;&lt;\" -&gt; \";										\n
+        pathWeight += maximumWeightPath[i];										\n
+    }										\n
+										\n
+    cout&lt;&lt;\"END\";										\n
+										\n
+    cout&lt;&lt;endl&lt;&lt;endl&lt;&lt;\"MAXIMUM PATH WEIGHT : \"&lt;&lt;pathWeight;										\n
+}										\n
+										\n
+int main()										\n
+{										\n
+    int maximumWeight = 0;										\n
+										\n
+    printMatrix();										\n
+										\n
+    for(int i=0;i&lt;pathMatrix.size();i++)										\n
+    {										\n
+        maximumWeight = 0;										\n
+										\n
+        for(int j=0;j&lt;pathMatrix[i].size();j++)										\n
+        {										\n
+            if(maximumWeight&lt;pathMatrix[i][j])										\n
+            {										\n
+                maximumWeight = pathMatrix[i][j];										\n
+            }										\n
+        }										\n
+										\n
+        maximumWeightPath.push_back(maximumWeight);										\n
+										\n
+    }										\n
+										\n
+    printPath();										\n
+										\n
+    return 0;										\n
+}										\n
+										\n
+        
+    </string>
+
+    <string name="stochastic_matrix_heading">Stochastic Matrix</string>
+    <string name="stochastic_matrix_problem">Hi</string>
+    <string name="stochastic_matrix_code">
+
+#include&lt;iostream&gt;								\n
+#include&lt;vector&gt;								\n
+								\n
+using namespace std;								\n
+								\n
+vector &lt;vector &lt;float&gt;&gt; matrix {{1,0,0},{0.1,0.4,0.5},{0,0.1,0.9}};								\n
+								\n
+void displayMatrix()								\n
+{								\n
+    for(int i=0;i&lt;matrix.size();i++)								\n
+    {								\n
+        for(int j=0;j&lt;matrix[i].size();j++)								\n
+        {								\n
+            cout&lt;&lt;matrix[i][j]&lt;&lt;\"\\t\";								\n
+        }								\n
+        cout&lt;&lt;endl;								\n
+    }								\n
+    cout&lt;&lt;endl&lt;&lt;endl;								\n
+}								\n
+								\n
+int main()								\n
+{								\n
+    bool isRight = true;								\n
+    int sum = 0;								\n
+								\n
+    displayMatrix();								\n
+								\n
+								\n
+    for(int i=0; i&lt;matrix.size(); i++)								\n
+    {								\n
+        sum = 0;								\n
+								\n
+        /* Has to be a square matrix */								\n
+								\n
+         if(matrix.size() != matrix[i].size())								\n
+            {								\n
+                isRight = false;								\n
+                break;								\n
+            }								\n
+								\n
+         /* Sum has to be a  one, values non-negative and not greater than one */								\n
+								\n
+								\n
+        for(int j=0; j&lt;matrix[i].size(); j++)								\n
+        {								\n
+            if(matrix[i][j] &lt; 0 || matrix[i][j] &gt; 1)								\n
+            {								\n
+                isRight = false;								\n
+                break;								\n
+            }								\n
+								\n
+            sum += matrix[i][j];								\n
+        }								\n
+								\n
+        if(sum != 1)								\n
+        {								\n
+            isRight = false;								\n
+            break;								\n
+        }								\n
+								\n
+        if(isRight == false)								\n
+        {								\n
+            break;								\n
+        }								\n
+								\n
+    }								\n
+								\n
+    if(isRight == true)								\n
+    {								\n
+        cout&lt;&lt;\"IS A RIGHT STOCHASTIC MATRIX\";								\n
+    }								\n
+    else								\n
+    {								\n
+        cout&lt;&lt;\"NOT A RIGHT STOCHASTIC MATRIX\";								\n
+    }								\n
+								\n
+    return 0;								\n
+}								\n
+
+
+    </string>
+
+    <string name="stochastic_content">
+
+        The \'Stochastic Matrix\' otherwise called the Probability Matrix or the Markov Matrix,
+        is one which has non-negative real valued entries.\n
+        \n
+        Based on the sum, these matrices may be classified into three : \n
+        \n
+        1. Right Stochastic Matrix ( Row-wise sum == 1 )\n\n
+        2. Left Stochastic Matrix ( Column-wise sum == 1 )\n\n
+        3. Doubly Stochastic Matrix ( Row-wise sum == 1 and column-wise sum == 1 )\n\n
+        \n
+        As the name suggests, the entries of the matrix, are probabilities, hence they have to
+        be in the range [0 - 1], inclusive.\n
+        \n
+        \n
+        Extra
+
+
+    </string>
+
+    <string name="hessenberg_heading">Hessenberg Matrix</string>
+    <string name="hessenberg_content">hi</string>
+
+    <string name="idempotent_matrix_button">Idempotent Matrix</string>
+    <string name="idempotent_content">hi</string>
+
+    <string name="involutory_matrix_button">Involutory Matrix</string>
+    <string name="involutory_content">hi</string>
+
+    <string name="orthogonal_matrix_button">Orthogonal Matrix</string>
+    <string name="orthogonal_content">hi</string>
+
+    <string name="binary_matrix_button">Binary Matrix</string>
+    <string name="binary_content">hi</string>
+
+    <string name="sparse_matrix_button">Sparse Matrix</string>
+    <string name="sparse_content">hi</string>
+    <string name="switchNerd">Check out theoritcal content under \'Learner\'. Just click switch at the top of this screen</string>
+
 
 </resources>
