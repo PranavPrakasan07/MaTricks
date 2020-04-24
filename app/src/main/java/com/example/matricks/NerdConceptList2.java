@@ -2,36 +2,35 @@ package com.example.matricks;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ScrollView;
 
-public class NerdConceptList extends AppCompatActivity {
+public class NerdConceptList2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nerd_concept_list);
+        setContentView(R.layout.activity_nerd_concept_list2);
 
         Button backbutton = findViewById(R.id.back_button_seelist);
 
-        final Button stochasticbutton = findViewById(R.id.Stochastic_matrix_button);
-        final Button hessenbergbutton = findViewById(R.id.hessenberg_button);
-        final Button idempotentbutton = findViewById(R.id.Idempotentbutton);
-        final Button involutorybutton = findViewById(R.id.Involutory_button);
-        final Button orthogonalbutton = findViewById(R.id.Orthogonal_button);
-        final Button binarybutton = findViewById(R.id.binarymatrix_button);
-        final Button sparsebutton = findViewById(R.id.Sparse_matrix_button);
+        final Button stochasticbutton = findViewById(R.id.intro_matrix_button);
+        final Button hessenbergbutton = findViewById(R.id.intro_determinant_button);
+        final Button idempotentbutton = findViewById(R.id.sum_matrices_button);
+        final Button involutorybutton = findViewById(R.id.sum_dets_button);
+        final Button orthogonalbutton = findViewById(R.id.multiplying_matrices_button);
+        final Button binarybutton = findViewById(R.id.multiplying_dets_button);
+        final Button sparsebutton = findViewById(R.id.trace_matrix_button);
 
-        final ScrollView stochastic = findViewById(R.id.stochiasticScroller);
-        final ScrollView hessenberg = findViewById(R.id.hessenbergScroller);
-        final ScrollView idempotent = findViewById(R.id.idempotentScroller);
-        final ScrollView involutory = findViewById(R.id.involutoryScroller);
-        final ScrollView orthogonal = findViewById(R.id.orthogonalScroller);
-        final ScrollView binary = findViewById(R.id.binaryScroller);
-        final ScrollView sparse = findViewById(R.id.sparseScroller);
+        final ScrollView stochastic = findViewById(R.id.intromatrixScroller);
+        final ScrollView hessenberg = findViewById(R.id.detintutionScroller);
+        final ScrollView idempotent = findViewById(R.id.summatrixScroller);
+        final ScrollView involutory = findViewById(R.id.sumdetsScroller);
+        final ScrollView orthogonal = findViewById(R.id.multmatrixScroller);
+        final ScrollView binary = findViewById(R.id.multdetScroller);
+        final ScrollView sparse = findViewById(R.id.traceScroller);
 
         final Button nextbutton = findViewById(R.id.nextbutton);
 
@@ -226,12 +225,5 @@ public class NerdConceptList extends AppCompatActivity {
 
             }
         });
-
-        }
-
-    public void toNerdList2(View view){
-
-        Intent intent = new Intent(this, NerdConceptList2.class);
-        startActivity(intent);
     }
 }

@@ -941,21 +941,25 @@ int main()								\n
 
     <string name="stochastic_content">
 
-        The \'Stochastic Matrix\' otherwise called the Probability Matrix or the Markov Matrix,
+        The \'<b>Stochastic Matrix</b>\' otherwise called the <b>Probability Matrix</b> or the <b>Markov Matrix</b>,
         is one which has non-negative real valued entries.\n
         \n
         Based on the sum, these matrices may be classified into three : \n
         \n
-        1. Right Stochastic Matrix ( Row-wise sum == 1 )\n\n
-        2. Left Stochastic Matrix ( Column-wise sum == 1 )\n\n
-        3. Doubly Stochastic Matrix ( Row-wise sum == 1 and column-wise sum == 1 )\n\n
+        1. Right Stochastic Matrix ( <i>Row-wise sum == 1</i> )\n\n
+        2. Left Stochastic Matrix ( <i>Column-wise sum == 1</i> )\n\n
+        3. Doubly Stochastic Matrix ( <i>Row-wise sum == 1 and column-wise sum == 1</i> )\n\n
         \n
         As the name suggests, the entries of the matrix, are probabilities, hence they have to
         be in the range [0 - 1], inclusive.\n
         \n
         \n
-        Extra
-
+        <b>Extra :</b>\n
+        \n
+        1. According to the <b>Sinkhorn\'s Theorem</b>, any matrix with strictly positive values can
+        be made Doubly Stochastic by pre- and post- multiplication with diagonal matrices.\n
+        \n
+        2. The product of two Doubly Stochastic matrices is again a Doubly Stochastic matrix.\n
 
     </string>
 
@@ -963,7 +967,11 @@ int main()								\n
     <string name="hessenberg_content">hi</string>
 
     <string name="idempotent_matrix_button">Idempotent Matrix</string>
-    <string name="idempotent_content">hi</string>
+    <string name="idempotent_content">
+
+
+
+    </string>
 
     <string name="involutory_matrix_button">Involutory Matrix</string>
     <string name="involutory_content">hi</string>
@@ -978,5 +986,104 @@ int main()								\n
     <string name="sparse_content">hi</string>
     <string name="switchNerd">Check out theoritcal content under \'Learner\'. Just click switch at the top of this screen</string>
 
+    <string name="trace_matrix_button">Trace of Matrix</string>
+    <string name="trace_matrix_content">
+
+
+
+    </string>
+
+    <string name="matrixsum_button">Sum of Matrices</string>
+    <string name="matrixsum_content">
+
+        The following points must be kept in mind while carrying out the addition of matrices.\n
+        \n
+        1. The <b>order</b> of both the matrices have to be the <b>same</b>.\n
+        \n
+        2. The summation of matrices is carried out such that the element in the resultant matrix,
+        is formed by the summation of the elements in the corresponding indices of the matrices being added.\n
+        \n
+        i.e. Let the matrices \'A\' and \'B\' be added in oder to form a matrix \'C\'. Then, the
+        order of matrices \'A\', \'B\' and \'C\' are the same.\n
+        \n
+        And, the sum of the element in the index ( i, j ) of matrix \'A\' is added with that of \'B\' to
+        produce the element in the ( i, j ) index of the matrix \'C\'.\n
+        \n
+        3. Addition of matrices is also commutative.\n\ni.e. A + B = B + A\n
+        \n
+
+    </string>
+
+    <string name="sum_dets_button">Sum of Determinants</string>
+    <string name="sum_dets_content">
+
+
+
+    </string>
+
+    <string name="symmetricMatrix_button">Symmetric Matrix</string>
+    <string name="symmetricMatrix_content">
+
+        A <b>Symmetric Matrix</b> is any matrix, which is the same even after taking the transpose.\n
+        \n
+        Mathematically,\n
+        \n
+        If \'A\' is a matrix, then, A == transpose( A ).\n
+        \n
+        In other words, we can even say that the matrix has a mirror as its diagonal.\n
+        \n
+        Some interesting points regarding Symmetric Matrices :\n
+        \n
+        1. If the Symmetric Matrix is Orthogonal, then the square of the matrix is an Identity Matrix.
+        Hence, the determinant of the matrix will be \'1\'.
+
+    </string>
+
+    <string name="skewsymmetricMatrix_button">Skew-Symmetric Matrix</string>
+    <string name="skewsymmetricMatrix_content">
+
+        A <b>Skew-Symmetric Matrix</b> is any matrix, which is equal to the negative of it\'s transpose.\n
+        \n
+        Mathematically,\n
+        \n
+        If \'A\' is a matrix, then, A == (-1) * transpose( A ).\n
+        \n
+        In other words, we can even say that the matrix has a mirror as its diagonal.\n
+        \n
+        Some interesting points regarding Skew-Symmetric Matrices :\n
+        \n
+        1. If the Symmetric Matrix is Orthogonal, then the square of the matrix is \'-1\' times the Identity Matrix.
+        Hence, the determinant of the matrix will be \'-1\'.\n
+        \n
+        2. The diagonal entries of such a matrix is necessarily \'0\'. Hence, the trace of the matrix os \'0\'.
+
+    </string>
+    <string name="matrices_intution_heading">Matrices : Intution</string>
+    <string name="matrix_intution_content">
+
+
+
+    </string>
+
+    <string name="determinants_intution_heading">Determinants : Intution</string>
+    <string name="det_intution_content">
+
+
+
+    </string>
+
+    <string name="multiplying_matrices_heading">Multiplying Matrices</string>
+    <string name="mult_matrix_content">
+
+        <b>Matrix Multiplication</b> is often.
+
+    </string>
+
+    <string name="multiplying_determinants_heading">Multiplying Determinants</string>
+    <string name="mult_dets_content">
+
+
+
+    </string>
 
 </resources>

@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MaxSumPath"/>
+        <activity android:name=".NerdConceptList2"/>
+        <activity android:name=".MaxSumPath" />
         <activity android:name=".MarkovMatrix" />
         <activity android:name=".NerdConceptList" />
         <activity android:name=".OddMagicSquare" />
