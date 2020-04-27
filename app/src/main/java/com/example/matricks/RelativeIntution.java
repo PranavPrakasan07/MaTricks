@@ -44,10 +44,10 @@ public class RelativeIntution extends AppCompatActivity {
             }
         });
 
-        involutorybutton.setOnClickListener(new View.OnClickListener() {
+        hessenbergbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                involutory.setVisibility(View.VISIBLE);
+                hessenberg.setVisibility(View.VISIBLE);
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
@@ -60,6 +60,37 @@ public class RelativeIntution extends AppCompatActivity {
             }
         });
 
+        involutorybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                involutory.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        orthogonalbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                orthogonal.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        binarybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binary.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        sparsebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sparse.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
     }
 
     public void goToCategoriesNerd(View view){

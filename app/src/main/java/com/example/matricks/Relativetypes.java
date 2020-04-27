@@ -42,6 +42,46 @@ public class Relativetypes extends AppCompatActivity {
             }
         });
 
+        hessenbergbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hessenberg.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        idempotentbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                idempotent.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        involutorybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                involutory.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        orthogonalbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                orthogonal.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        binarybutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binary.setVisibility(View.VISIBLE);
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
         sparsebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +89,7 @@ public class Relativetypes extends AppCompatActivity {
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
+
 
     }
 
