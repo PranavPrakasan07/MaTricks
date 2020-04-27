@@ -1061,6 +1061,16 @@ int main()								\n
     <string name="matrices_intution_heading">Matrices : Intution</string>
     <string name="matrix_intution_content">
 
+        The <b>Matrix</b> is simply an arrangement of numbers, usually enclosed in rounded or square brackets.
+        These are expressed in m * n form, where, \'m\' represents the number of rows and \'n\' represents the
+        number of columns. This is defined as the order of the matrix.\n
+        \n
+        i.e. A matrix with \'m\' rows and \'n\' columns is defined as a matrix of order m * n ( <i>m by n</i> ).\n
+        \n
+        Understanding <b>\'order\'</b> is important in order the do operations in matrices these come to use.
+        Some proofs may be greatly simplified using their orders.\n
+        \n
+        The intuitive idea of Matrices may be greatly understood
 
 
     </string>
@@ -1085,5 +1095,22 @@ int main()								\n
 
 
     </string>
+
+    <string name="diagonalisation_heading">Diagonalisation of Matrices</string>
+    <string name="diagonalisation_content">
+
+
+
+    </string>
+
+    <string name="eigenvalue_heading">Eigenvalue</string>
+    <string name="eigenvalue_content">
+
+
+
+    </string>
+    <string name="calculations_button">Calculations</string>
+    <string name="intution_button">Intution</string>
+    <string name="types_of_matrices_button">Types</string>
 
 </resources>

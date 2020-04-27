@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void nerd(View view)
     {
-        Toast.makeText(this, "Taking you in !!!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Choose what you want to learn !!!", Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(this, NerdConceptList.class);
+        Intent intent = new Intent(this, CategoriesNerd.class);
         startActivity(intent);
     }
 }

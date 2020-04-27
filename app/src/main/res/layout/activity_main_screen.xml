@@ -107,15 +107,17 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/swapMajor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
 
     <Button
         android:id="@+id/back_button_seelist"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/custom_button3"
+        android:background="@drawable/custom_button1"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="previousPage"
         android:text="@string/back_button"
@@ -149,7 +151,7 @@
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/custom_button2"
+        android:background="@drawable/custom_button1"
         android:gravity="center_vertical|center_horizontal"
         android:onClick="nextPage"
         android:text="@string/front_button"

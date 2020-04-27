@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Relativetypes"
+    android:background="@drawable/background6">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:id="@+id/relativelayouttypes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back_button_seelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/back_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:onClick="goToCategoriesNerd"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/Stochastic_matrix_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/stochastic_matrix_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/back_button_seelist" />
+
+    <Button
+        android:id="@+id/hessenberg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/hessenberg_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/Stochastic_matrix_button" />
+
+    <Button
+        android:id="@+id/Idempotentbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/idempotent_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/hessenberg_button" />
+
+    <Button
+        android:id="@+id/Involutory_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/involutory_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/Idempotentbutton" />
+
+    <Button
+        android:id="@+id/Orthogonal_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/orthogonal_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/Involutory_button" />
+
+    <Button
+        android:id="@+id/binarymatrix_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/binary_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/Orthogonal_button" />
+
+    <Button
+        android:id="@+id/Sparse_matrix_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/sparse_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/binarymatrix_button" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/binary_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/Sparse_matrix_button" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/sparse_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/b1" />
+
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/front_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@id/b2"/>
+
+</RelativeLayout>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/stochiasticScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/Stochastic_matrix_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stochastic_content"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <ScrollView
+
+        android:visibility="invisible"
+        android:id="@+id/hessenbergScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/hessenberg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hessenberg_content"
+            android:textColor="#000" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/idempotentScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/idempotent_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/idempotent_content"
+            android:textColor="#000" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/involutoryScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/involutory_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/involutory_content"
+            android:textColor="#000" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/orthogonalScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/orthogonal_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orthogonal_content"
+            android:textColor="#000" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/binaryScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/binary_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/binary_content"
+            android:textColor="#000" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/sparseScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/sparse_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sparse_content"
+            android:textColor="#000" />
+
+    </ScrollView>
+
+</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

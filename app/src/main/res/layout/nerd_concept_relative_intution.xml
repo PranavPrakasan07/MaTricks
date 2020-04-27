@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background6"
+    tools:context=".Relativetypes"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="gravity"
+    android:gravity="center_horizontal|center_vertical">
+
+<RelativeLayout
+    android:id="@+id/relativelayoutintution"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back_button_seelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/back_button"
+        android:onClick="goToCategoriesNerd"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/intro_matrix_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/matrices_intution_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/back_button_seelist" />
+
+    <Button
+        android:id="@+id/intro_determinant_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/determinants_intution_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/intro_matrix_button" />
+
+    <Button
+        android:id="@+id/sum_matrices_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/matrixsum_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/intro_determinant_button" />
+
+    <Button
+        android:id="@+id/sum_dets_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/sum_dets_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/sum_matrices_button" />
+
+    <Button
+        android:id="@+id/multiplying_matrices_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/multiplying_matrices_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/sum_dets_button" />
+
+    <Button
+        android:id="@+id/multiplying_dets_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/multiplying_determinants_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/multiplying_matrices_button" />
+
+    <Button
+        android:id="@+id/trace_matrix_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/trace_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/multiplying_dets_button" />
+
+ <Button
+        android:id="@+id/diagonalisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/diagonalisation_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/trace_matrix_button" />
+
+    <Button
+        android:id="@+id/eigenvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/eigenvalue_heading"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/diagonalisation" />
+
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/front_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/eigenvalue" />
+
+</RelativeLayout>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/intromatrixScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/intro_matrix_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/matrix_intution_content"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/detintutionScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/detintutioncontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/det_intution_content"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/summatrixScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/summatrix_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/matrixsum_content"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/sumdetsScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/sumdets_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sum_dets_content"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/multmatrixScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/multmatrixcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mult_matrix_content"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/multdetScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/multdet_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mult_dets_content"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="invisible"
+        android:id="@+id/traceScroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/trace_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trace_matrix_content"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
