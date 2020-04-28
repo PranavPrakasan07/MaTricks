@@ -964,7 +964,29 @@ int main()								\n
     </string>
 
     <string name="hessenberg_heading">Hessenberg Matrix</string>
-    <string name="hessenberg_content">hi</string>
+    <string name="hessenberg_content">
+
+        The <b>Hessenberg Matrix</b> is one which has zeroes as its elements above its first
+        super-diagonal or below its first sub-diagonal. It is a square-matrix, that is almost triangular.\n
+        \n
+        In the case of zeroes below the first sub-diagonal, the matrix is named an <b>upper-hessenberg matrix</b>,
+        and in the other case it is called a <b>lower-hessenberg matrix</b>.\n
+        \n
+        \n
+        <b>Why is this important ?</b>\n
+        \n
+        Linear Algebra algorithms require less computational effort when they are applied to triangular matrices.
+        This is extended to Hessenberg Matrices as well which is an almost-triangular matrix.\n
+        \n
+        If it is found difficult to convert a general matrix into a triangular-matrix, conversion to a
+        Hessenberg Matrix is the next idea thought of.\n
+        \n
+        A general matrix may be converted to a Hessenberg Matrix using say, the Householder\'s Transformation,
+        in a finite number of steps. This can be further reduced to a triangular matrix through
+        Shifted QR-Factorisation, or other iterative procedures.
+        \n
+
+    </string>
 
     <string name="idempotent_matrix_button">Idempotent Matrix</string>
     <string name="idempotent_content">
@@ -980,7 +1002,11 @@ int main()								\n
     <string name="orthogonal_content">hi</string>
 
     <string name="binary_matrix_button">Binary Matrix</string>
-    <string name="binary_content">hi</string>
+    <string name="binary_content">
+
+        A <b>Binary Matrix</b> is one which only has either of the two entries
+
+    </string>
 
     <string name="sparse_matrix_button">Sparse Matrix</string>
     <string name="sparse_content">hi</string>

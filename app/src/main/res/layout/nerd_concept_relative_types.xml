@@ -192,7 +192,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/hessenberg_content"
-            android:textColor="#000" />
+            android:textSize="20sp"
+            android:textColor="#FFF" />
 
     </ScrollView>
 
