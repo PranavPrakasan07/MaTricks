@@ -1050,14 +1050,24 @@ int main()								\n
     <string name="involutory_content">
 
         The <b>Involutory Matrix</b> has its inverse equal to itself, hence the name. In other words,
-        let there be a matrix \'A\', then, A = A<sup><small>-1</small></sup>\n
+        let there be a matrix \'A\', then, A = A<sup><small>-1</small></sup> A sup&gt;\n
         \n
         or\n
         \n
         A<sup><small>2</small></sup> = I\n
         \n
-
-
+        An involutory matrix which is also symmetric is orthogonal. In other words,\n
+        \n
+        Involutory Matrix + Symmetric Matrix =&gt; Orthogonal Matrix\n
+        \n
+        <b>Propreties : </b>\n
+        \n
+        Let \'A\' be an involutory matrix, then,\n
+        \n
+        1. Determinant of \'A\' = +1 or -1\n
+        2. \'A\' is involutory iff (1/2)*( A + I ) is idempotent\n
+        3. All powers of \'A\' are involutory, if power is odd - the result is \'A\' and \'I\' if power is even.\n
+        \n
 
     </string>
 
@@ -1125,7 +1135,6 @@ int main()								\n
 
         The <b>Adjoint</b> or the <b>Adjugate</b> of a matrix is defined as the transpose of the Co-factor matrix.
 
-
     </string>
 
     <string name="cofactor_matrix_button">Cofactor Matrix</string>
@@ -1134,7 +1143,26 @@ int main()								\n
         The <b>Cofactor</b> of a matrix is defined as the Co-factor matrix.
 
 
+
     </string>
+
+
+    <string name="signature_matrix_button">Signature Matrix</string>
+    <string name="signature_matrix_content">
+
+        <b>Note :</b> The following description is for <b>Signature Matrix</b>, and <b>not Signature of a Matrix</b>.\n
+        \n
+        This is a diagonal matrix with diagonal elements being plus or minus \'1\'.
+        The matrix in these cases is the same as their inverse. Here, all of the diagonal elements may not necessarily be the same.\n
+        \n
+        Hence, these matrices are an example of involutory matrices. Since these matrices are symmetric as well, these matrices
+        are Orthogonal as well.\n
+        \n
+        These matrices represent a reflection in each of the axes corresponding to the negated rows or columns.\n
+        \n
+
+    </string>
+
 
     <string name="trace_matrix_button">Trace of Matrix</string>
     <string name="trace_matrix_content">

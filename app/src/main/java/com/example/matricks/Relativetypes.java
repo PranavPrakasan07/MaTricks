@@ -30,6 +30,7 @@ public class Relativetypes extends AppCompatActivity {
         final Button skewsymbutton = findViewById(R.id.skewsymmetricmatrixbutton);
         final Button singularmatbutton = findViewById(R.id.singularmatrixbutton);
         final Button elementarybutton = findViewById(R.id.elementarymatrixbutton);
+        final Button signaturebutton = findViewById(R.id.signaturematrixbutton);
 
         final TextView commoncontent = findViewById(R.id.commoncontent);
         final ScrollView commonscroller = findViewById(R.id.commonscroller);
@@ -133,6 +134,14 @@ public class Relativetypes extends AppCompatActivity {
             }
         });
 
+        signaturebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.signature_matrix_content));
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
     }
 
     public void goToCategoriesNerd(View view){

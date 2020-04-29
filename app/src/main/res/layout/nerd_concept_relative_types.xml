@@ -171,6 +171,18 @@
         android:textSize="20sp"
         android:layout_below="@+id/singularmatrixbutton" />
 
+    <Button
+        android:id="@+id/signaturematrixbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/signature_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/elementarymatrixbutton" />
 
     <Button
         android:id="@+id/nextbutton"
@@ -184,7 +196,7 @@
         android:textAlignment="gravity"
         android:textColor="#000"
         android:textSize="20sp"
-        android:layout_below="@id/elementarymatrixbutton"/>
+        android:layout_below="@id/signaturematrixbutton"/>
 
 </RelativeLayout>
 
