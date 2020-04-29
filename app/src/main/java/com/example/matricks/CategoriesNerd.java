@@ -45,4 +45,11 @@ public class CategoriesNerd extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToCalculationListRel(View view){
+
+        Intent intent = new Intent(CategoriesNerd.this, CheckingSetText.class);
+        startActivity(intent);
+
+    }
+
 }

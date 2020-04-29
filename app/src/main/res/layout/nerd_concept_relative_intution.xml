@@ -123,7 +123,7 @@
         android:layout_below="@+id/multiplying_dets_button" />
 
  <Button
-        android:id="@+id/diagonalisation"
+        android:id="@+id/diagonalisation_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -136,7 +136,7 @@
         android:layout_below="@+id/trace_matrix_button" />
 
     <Button
-        android:id="@+id/eigenvalue"
+        android:id="@+id/eigenvalue_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -146,8 +146,33 @@
         android:textAlignment="gravity"
         android:textColor="#000"
         android:textSize="20sp"
-        android:layout_below="@+id/diagonalisation" />
+        android:layout_below="@+id/diagonalisation_button" />
 
+    <Button
+        android:id="@+id/cofactor_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/cofactor_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/eigenvalue_button" />
+
+    <Button
+        android:id="@+id/adjoint_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/adjoint_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/cofactor_button" />
 
     <Button
         android:id="@+id/b2"
@@ -161,124 +186,21 @@
         android:textAlignment="gravity"
         android:textColor="#000"
         android:textSize="20sp"
-        android:layout_below="@+id/eigenvalue" />
+        android:layout_below="@+id/adjoint_button" />
 
 </RelativeLayout>
 
     <ScrollView
         android:visibility="invisible"
-        android:id="@+id/intromatrixScroller"
+        android:id="@+id/commonscroller"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="40dp">
 
         <TextView
-            android:id="@+id/intro_matrix_content"
+            android:id="@+id/commoncontent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/matrix_intution_content"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/detintutionScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/detintutioncontent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/det_intution_content"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/summatrixScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/summatrix_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/matrixsum_content"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/sumdetsScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/sumdets_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sum_dets_content"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/multmatrixScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/multmatrixcontent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mult_matrix_content"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/multdetScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/multdet_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mult_dets_content"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/traceScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/trace_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/trace_matrix_content"
             android:textColor="#FFF"
             android:textSize="20sp" />
 

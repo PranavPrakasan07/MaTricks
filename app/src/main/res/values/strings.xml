@@ -991,12 +991,120 @@ int main()								\n
     <string name="idempotent_matrix_button">Idempotent Matrix</string>
     <string name="idempotent_content">
 
+        We might remember of the idempotent law we\'ve used in set theory, or boolean algebra or in any other field.
+        Well, if you did not, no issues, here is the definition.\n
+        \n
+        Mathematically,\n
+        \n
+        If \'A\' is a matrix, the A<sup><small>2</small></sup> = A\n
+        \n
+        This can be extended to A<sup><small>n</small></sup> = A, by induction.\n
+        \n
+        That is, if the matrix is multiplied with itself, then the product turns out to be the same matrix.\n
+        \n
+        One immediate point we can make after this statement is that, the matrix to be idempotent has to
+        necessarily be a square matrix.\n
+        \n
+        Wait, but why?\n
+        \n
+        We know that for multiplication of matrices to be defined, the order of the matrices have to be
+        \'m * n\' and \'n * p\' in the general case. Here, since we multiply the same matrix with itself, \'m\' has to
+        be equal to \'n\'.
+        \n
+        <b>Properties : </b>\n
+        \n
+        1. The matrix is always diagonalisable, and has eigenvalues \'0\' or \'1\'.\n
+        2. The trace of the matrix is equal to the rank of the matrix.\n
+        3. The trace is hence always an integer.\n
+        4. Identity matrix is the only non-singular idempotent matrix.\n
+        \n
 
 
     </string>
 
+    <string name="singularmatrix_button">Singular Matrix</string>
+    <string name="singularmatrix_content">
+
+        A matrix is said to be singular if the determinant of the matrix is \'0\'. Hence, by this argument,
+        we can say that singular matrices do not have definable inverses.\n
+        \n
+        We can also informally state that,\n
+        \n
+         1. If all the elements in a row or column of the matrix is zero, then it is a singular matrix.\n
+         2. If two or more rows or columns of a matrix are the same, then again the matrix is singular.\n
+        \n
+        Hence, we can say that a matrix with non-zero determinant value is a non-singular matrix.\n
+        \n
+        Now, why is it called \'Singular\'\n
+        \n
+        The determinant value stands for the value by which the system is scaled. Hence, when this value diminishes to zero,
+        this means that the system squishes to a lower dimension. This concept may be used to define the
+        relevance of the word \'singularity\' in this context.\n
+        \n
+        It is perfectly fine if you don\'t get this in the first time. Do read the intuitive idea behind matrix multiplication
+        and have a read again.
+
+    </string>
+
     <string name="involutory_matrix_button">Involutory Matrix</string>
-    <string name="involutory_content">hi</string>
+    <string name="involutory_content">
+
+        The <b>Involutory Matrix</b> has its inverse equal to itself, hence the name. In other words,
+        let there be a matrix \'A\', then, A = A<sup><small>-1</small></sup>\n
+        \n
+        or\n
+        \n
+        A<sup><small>2</small></sup> = I\n
+        \n
+
+
+
+    </string>
+
+    <string name="elementary_matrix_button">Elementary Matrix</string>
+    <string name="elementary_content">
+
+        An <b>Elementary Matrix</b> is one which differs from the identity matrix by a single elementary
+        operation.\n
+        \n
+        What are <b>elementary row operations</b> ?\n
+        \n
+        There are three types of elementary operations, they are :\n
+        \n
+        1. Row-interchange\n
+        \n
+        R<sub><small>i</small></sub> &lt;-&gt; R<sub><small>j</small></sub>\n
+        2. Row multiplied by a non-zero scalar value ( say, \'k\')\n
+        \n
+        R<sub><small>i</small></sub> &lt;-&gt; k *R<sub><small>i</small></sub>\n
+        \n
+        3. Row added by a scalar multiplied with another row.
+        R<sub><small>i</small></sub> &lt;-&gt; R<sub><small>i</small></sub> + k * R<sub><small>j</small></sub>\n
+        \n
+        An interesting property is that the row-interchanged elementary matrix has a determinant value
+        equal to the negative of that of the identity matrix.\n
+        \n
+        An interesting property is that the row-multiplied-by-scalar elementary matrix has a determinant value
+        equal to \'k\' times of that of the identity matrix. The inverse of this matrix is \'1/k\' in the
+        \'ith\' position where the multiplication was made.\n
+        \n
+        The interesting property of the third type is that the matrix and it\'s inverse are triangular matrices, and
+        the determinant value is \'1\'.\n
+        \n
+
+    </string>
+
+    <string name="frobenius_matrix_button">Frobenius Matrix</string>
+    <string name="frobenius_content">
+
+        The <b>Frobenius Matrix</b> is one which has all \'1\'s in the diagonal and arbitrary values in one column below
+        the main diagonal. All the other entries are \'0\'.\n
+        \n
+        The Frobenius Matrix is invertible and the inverse of the Frobenius Matrix is the same matrix with
+        changed signs <b>outside the main diagonal</b>.\n
+        \n
+
+    </string>
 
     <string name="orthogonal_matrix_button">Orthogonal Matrix</string>
     <string name="orthogonal_content">hi</string>
@@ -1011,6 +1119,22 @@ int main()								\n
     <string name="sparse_matrix_button">Sparse Matrix</string>
     <string name="sparse_content">hi</string>
     <string name="switchNerd">Check out theoritcal content under \'Learner\'. Just click switch at the top of this screen</string>
+
+    <string name="adjoint_matrix_button">Adjoint Matrix</string>
+    <string name="adjoint_content">
+
+        The <b>Adjoint</b> or the <b>Adjugate</b> of a matrix is defined as the transpose of the Co-factor matrix.
+
+
+    </string>
+
+    <string name="cofactor_matrix_button">Cofactor Matrix</string>
+    <string name="cofactor_content">
+
+        The <b>Cofactor</b> of a matrix is defined as the Co-factor matrix.
+
+
+    </string>
 
     <string name="trace_matrix_button">Trace of Matrix</string>
     <string name="trace_matrix_content">

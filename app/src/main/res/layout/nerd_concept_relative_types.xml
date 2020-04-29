@@ -120,30 +120,56 @@
         android:layout_below="@+id/binarymatrix_button" />
 
     <Button
-        android:id="@+id/b1"
+        android:id="@+id/symmetricmatrixbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/custom_button1"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/binary_matrix_button"
+        android:text="@string/symmetricMatrix_button"
         android:textAlignment="gravity"
         android:textColor="#000"
         android:textSize="20sp"
         android:layout_below="@+id/Sparse_matrix_button" />
 
     <Button
-        android:id="@+id/b2"
+        android:id="@+id/skewsymmetricmatrixbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/custom_button1"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/sparse_matrix_button"
+        android:text="@string/skewsymmetricMatrix_button"
         android:textAlignment="gravity"
         android:textColor="#000"
         android:textSize="20sp"
-        android:layout_below="@+id/b1" />
+        android:layout_below="@+id/symmetricmatrixbutton" />
+
+    <Button
+        android:id="@+id/singularmatrixbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/singularmatrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/skewsymmetricmatrixbutton" />
+
+    <Button
+        android:id="@+id/elementarymatrixbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/elementary_matrix_button"
+        android:textAlignment="gravity"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_below="@+id/singularmatrixbutton" />
 
 
     <Button
@@ -158,122 +184,23 @@
         android:textAlignment="gravity"
         android:textColor="#000"
         android:textSize="20sp"
-        android:layout_below="@id/b2"/>
+        android:layout_below="@id/elementarymatrixbutton"/>
 
 </RelativeLayout>
 
     <ScrollView
         android:visibility="invisible"
-        android:id="@+id/stochiasticScroller"
+        android:id="@+id/commonscroller"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="40dp">
 
         <TextView
-            android:id="@+id/Stochastic_matrix_content"
+            android:id="@+id/commoncontent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/stochastic_content"
             android:textColor="#FFF"
             android:textSize="20sp" />
-
-    </ScrollView>
-
-    <ScrollView
-
-        android:visibility="invisible"
-        android:id="@+id/hessenbergScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/hessenberg_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/hessenberg_content"
-            android:textSize="20sp"
-            android:textColor="#FFF" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/idempotentScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/idempotent_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/idempotent_content"
-            android:textColor="#000" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/involutoryScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/involutory_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/involutory_content"
-            android:textColor="#000" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/orthogonalScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/orthogonal_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/orthogonal_content"
-            android:textColor="#000" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/binaryScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/binary_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/binary_content"
-            android:textColor="#000" />
-
-    </ScrollView>
-
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/sparseScroller"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/sparse_content"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sparse_content"
-            android:textColor="#000" />
 
     </ScrollView>
 

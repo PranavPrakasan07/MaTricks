@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.strictmode.WebViewMethodCalledOnWrongThreadViolation;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 public class RelativeIntution extends AppCompatActivity {
 
@@ -19,78 +19,100 @@ public class RelativeIntution extends AppCompatActivity {
 
         final RelativeLayout relativeLayout = findViewById(R.id.relativelayoutintution);
 
-        final Button stochasticbutton = findViewById(R.id.intro_matrix_button);
-        final Button hessenbergbutton = findViewById(R.id.intro_determinant_button);
-        final Button idempotentbutton = findViewById(R.id.sum_matrices_button);
-        final Button involutorybutton = findViewById(R.id.sum_dets_button);
-        final Button orthogonalbutton = findViewById(R.id.multiplying_matrices_button);
-        final Button binarybutton = findViewById(R.id.multiplying_dets_button);
-        final Button sparsebutton = findViewById(R.id.trace_matrix_button);
+        final Button intromatrixbutton = findViewById(R.id.intro_matrix_button);
+        final Button introdetbutton = findViewById(R.id.intro_determinant_button);
+        final Button matrixsumbutton = findViewById(R.id.sum_matrices_button);
+        final Button detsumbutton = findViewById(R.id.sum_dets_button);
+        final Button multiplyingmatrixbutton = findViewById(R.id.multiplying_matrices_button);
+        final Button multiplyingdetbutton = findViewById(R.id.multiplying_dets_button);
+        final Button tracebutton = findViewById(R.id.trace_matrix_button);
+        final Button adjointbutton = findViewById(R.id.cofactor_button);
+        final Button cofactorbutton = findViewById(R.id.adjoint_button);
 
-        final ScrollView stochastic = findViewById(R.id.intromatrixScroller);
-        final ScrollView hessenberg = findViewById(R.id.detintutionScroller);
-        final ScrollView idempotent = findViewById(R.id.summatrixScroller);
-        final ScrollView involutory = findViewById(R.id.sumdetsScroller);
-        final ScrollView orthogonal = findViewById(R.id.multmatrixScroller);
-        final ScrollView binary = findViewById(R.id.multdetScroller);
-        final ScrollView sparse = findViewById(R.id.traceScroller);
+        final TextView commoncontent = findViewById(R.id.commoncontent);
+        final ScrollView commonscroller = findViewById(R.id.commonscroller);
 
-
-        stochasticbutton.setOnClickListener(new View.OnClickListener() {
+        intromatrixbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stochastic.setVisibility(View.VISIBLE);
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.matrix_intution_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
 
-        hessenbergbutton.setOnClickListener(new View.OnClickListener() {
+        introdetbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                hessenberg.setVisibility(View.VISIBLE);
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.det_intution_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
 
-        idempotentbutton.setOnClickListener(new View.OnClickListener() {
+        matrixsumbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                idempotent.setVisibility(View.VISIBLE);
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.matrixsum_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
 
-        involutorybutton.setOnClickListener(new View.OnClickListener() {
+        detsumbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                involutory.setVisibility(View.VISIBLE);
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.sum_dets_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
 
-        orthogonalbutton.setOnClickListener(new View.OnClickListener() {
+        multiplyingmatrixbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                orthogonal.setVisibility(View.VISIBLE);
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.mult_matrix_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
 
-        binarybutton.setOnClickListener(new View.OnClickListener() {
+        multiplyingdetbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                binary.setVisibility(View.VISIBLE);
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.mult_dets_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
 
-        sparsebutton.setOnClickListener(new View.OnClickListener() {
+        tracebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sparse.setVisibility(View.VISIBLE);
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.trace_matrix_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
+
+        cofactorbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.cofactor_content));
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        adjointbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.adjoint_content));
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
     }
 
     public void goToCategoriesNerd(View view){
