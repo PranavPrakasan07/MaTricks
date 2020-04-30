@@ -936,7 +936,6 @@ int main()								\n
     return 0;								\n
 }								\n
 
-
     </string>
 
     <string name="stochastic_content">
@@ -1122,12 +1121,18 @@ int main()								\n
     <string name="binary_matrix_button">Binary Matrix</string>
     <string name="binary_content">
 
-        A <b>Binary Matrix</b> is one which only has either of the two entries
+        A <b>Binary Matrix</b> is one which only has either of the two entries \'0\' or \'1\'.
 
     </string>
 
     <string name="sparse_matrix_button">Sparse Matrix</string>
-    <string name="sparse_content">hi</string>
+    <string name="sparse_content">
+
+        A <b>Sparse Matrix</b> is one which has fewer connections amongst all possible connections. The opposite of
+        this type is the dense matrix which has more number of connections when compared to the total number of connections.
+    </string>
+
+
     <string name="switchNerd">Check out theoritcal content under \'Learner\'. Just click switch at the top of this screen</string>
 
     <string name="adjoint_matrix_button">Adjoint Matrix</string>

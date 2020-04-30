@@ -3,6 +3,7 @@ package com.example.matricks;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -113,6 +114,14 @@ public class RelativeIntution extends AppCompatActivity {
             }
         });
 
+        commoncontent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                commonscroller.setVisibility(View.INVISIBLE);
+                relativeLayout.setVisibility(View.VISIBLE);
+            }
+        });
+
     }
 
     public void goToCategoriesNerd(View view){
@@ -121,5 +130,6 @@ public class RelativeIntution extends AppCompatActivity {
         startActivity(intent);
 
     }
+
 
 }

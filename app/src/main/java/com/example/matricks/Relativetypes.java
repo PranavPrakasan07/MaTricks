@@ -142,6 +142,14 @@ public class Relativetypes extends AppCompatActivity {
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
+
+        commoncontent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                commonscroller.setVisibility(View.INVISIBLE);
+                relativeLayout.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     public void goToCategoriesNerd(View view){
