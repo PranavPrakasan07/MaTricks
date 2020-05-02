@@ -3,8 +3,9 @@ package com.example.matricks;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -30,12 +31,17 @@ public class RelativeIntution extends AppCompatActivity {
         final Button adjointbutton = findViewById(R.id.cofactor_button);
         final Button cofactorbutton = findViewById(R.id.adjoint_button);
 
+        final TextView commonlink = findViewById(R.id.commonlink);
         final TextView commoncontent = findViewById(R.id.commoncontent);
         final ScrollView commonscroller = findViewById(R.id.commonscroller);
 
         intromatrixbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                String linkText = "Visit the <a href='http://stackoverflow.com'>StackOverflow</a> web page.\n\n <a href='http://google.com'>Google</a>";
+//                commonlink.setText(Html.fromHtml(linkText));
+//                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
+                commonlink.setVisibility(View.VISIBLE);
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.matrix_intution_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
@@ -54,6 +60,9 @@ public class RelativeIntution extends AppCompatActivity {
         matrixsumbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                String linkText = "Visit the <a href='http://google.com'>Google</a> web page.";
+//                commonlink.setText(Html.fromHtml(linkText));
+//                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.matrixsum_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
@@ -114,13 +123,17 @@ public class RelativeIntution extends AppCompatActivity {
             }
         });
 
-        commoncontent.setOnClickListener(new View.OnClickListener() {
+        commoncontent.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onLongClick(View v) {
+                commonlink.setVisibility(View.INVISIBLE);
                 commonscroller.setVisibility(View.INVISIBLE);
                 relativeLayout.setVisibility(View.VISIBLE);
+
+                return true;
             }
         });
+
 
     }
 

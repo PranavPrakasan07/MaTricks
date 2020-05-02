@@ -143,11 +143,14 @@ public class Relativetypes extends AppCompatActivity {
             }
         });
 
-        commoncontent.setOnClickListener(new View.OnClickListener() {
+        commoncontent.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onLongClick(View v) {
+
                 commonscroller.setVisibility(View.INVISIBLE);
                 relativeLayout.setVisibility(View.VISIBLE);
+
+                return true;
             }
         });
     }

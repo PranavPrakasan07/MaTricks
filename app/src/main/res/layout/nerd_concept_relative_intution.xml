@@ -190,11 +190,16 @@
 
 </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/commonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ScrollView
         android:visibility="invisible"
         android:id="@+id/commonscroller"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="40dp">
 
         <TextView
@@ -205,6 +210,20 @@
             android:textSize="20sp" />
 
     </ScrollView>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/commonlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="gravity"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_below="@id/commonscroller"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
 
