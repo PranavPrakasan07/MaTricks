@@ -38,9 +38,9 @@ public class RelativeIntution extends AppCompatActivity {
         intromatrixbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                String linkText = "Visit the <a href='http://stackoverflow.com'>StackOverflow</a> web page.\n\n <a href='http://google.com'>Google</a>";
-//                commonlink.setText(Html.fromHtml(linkText));
-//                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
+                String linkText = "Visit the <a href='http://stackoverflow.com'>StackOverflow</a> web page.\n\n <a href='http://google.com'>Google</a>";
+                commonlink.setText(Html.fromHtml(linkText));
+                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
                 commonlink.setVisibility(View.VISIBLE);
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.matrix_intution_content));
@@ -60,9 +60,10 @@ public class RelativeIntution extends AppCompatActivity {
         matrixsumbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                String linkText = "Visit the <a href='http://google.com'>Google</a> web page.";
-//                commonlink.setText(Html.fromHtml(linkText));
-//                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
+                String linkText = "Visit the <a href='http://google.com'>Google</a> web page.";
+                commonlink.setText(Html.fromHtml(linkText));
+                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
+                commonlink.setVisibility(View.VISIBLE);
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.matrixsum_content));
                 relativeLayout.setVisibility(View.INVISIBLE);

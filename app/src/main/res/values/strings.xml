@@ -1241,6 +1241,7 @@ int main()								\n
         2. The diagonal entries of such a matrix is necessarily \'0\'. Hence, the trace of the matrix os \'0\'.
 
     </string>
+
     <string name="matrices_intution_heading">Matrices : Intution</string>
     <string name="matrix_intution_content">
 
@@ -1253,7 +1254,6 @@ int main()								\n
         Understanding <b>\'order\'</b> is important in order the do operations in matrices these come to use.
         Some proofs may be greatly simplified using their orders.\n
         \n
-        The intuitive idea of Matrices may be greatly understood
 
 
     </string>
@@ -1261,7 +1261,22 @@ int main()								\n
     <string name="determinants_intution_heading">Determinants : Intution</string>
     <string name="det_intution_content">
 
-
+        In order to define the intuitive idea behind determinants let us take the example of a 2x2 matrices and
+        3x3 matrices.\n
+        \n
+        As we know, a matrix represents a transformation of a system of vectors. In the case of a 2x2 matrix, this represents
+        a transformation in the 2-dimensional system, whereas a 3x3 matrix in a 3-dimensional system.\n
+        \n
+        The scale by which the matrix causes a transformation to the system is determined by the determinant.\n
+        \n
+        <b>Some Special Cases</b>\n
+        \n
+        1. A determinant value = 2, would be a scaling of the system by 2 times.
+        2. A determinant value = 1, would mean that the system is neither enlarged nor shrunk.
+        3. A determinant value = 0, this is interesting, as in this case it would mean that the system is shrunk to
+        such a scale that the system squishes by a dimension.\n
+        \n
+        This would mean that a 3-dimensional system squishes to a 2-dimensional system, that is, into a line.
 
     </string>
 
