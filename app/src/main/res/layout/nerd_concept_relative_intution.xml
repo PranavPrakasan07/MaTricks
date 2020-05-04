@@ -18,6 +18,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <Button
         android:id="@+id/back_button_seelist"
         android:layout_width="match_parent"
@@ -195,32 +196,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <ScrollView
-        android:visibility="invisible"
-        android:id="@+id/commonscroller"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp">
-
-        <TextView
-            android:id="@+id/commoncontent"
+        <ScrollView
+            android:id="@+id/commonscroller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#FFF"
-            android:textSize="20sp" />
+            android:layout_margin="40dp"
+            android:visibility="invisible">
 
-    </ScrollView>
+            <TextView
+                android:id="@+id/commoncontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+        </ScrollView>
 
         <TextView
-            android:visibility="invisible"
             android:id="@+id/commonlink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="gravity"
-            android:gravity="center_horizontal|center_vertical"
             android:layout_below="@id/commonscroller"
+            android:layout_margin="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAlignment="gravity"
             android:textColor="#FFF"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:visibility="invisible" />
 
     </RelativeLayout>
 

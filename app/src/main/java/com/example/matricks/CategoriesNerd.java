@@ -80,4 +80,9 @@ public class CategoriesNerd extends AppCompatActivity {
 
     }
 
+    public void goToMainScreen(View view){
+        Intent intent = new Intent(CategoriesNerd.this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

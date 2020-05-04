@@ -30,6 +30,7 @@ public class RelativeIntution extends AppCompatActivity {
         final Button tracebutton = findViewById(R.id.trace_matrix_button);
         final Button adjointbutton = findViewById(R.id.cofactor_button);
         final Button cofactorbutton = findViewById(R.id.adjoint_button);
+        final Button eigenvalue = findViewById(R.id.eigenvalue_button);
 
         final TextView commonlink = findViewById(R.id.commonlink);
         final TextView commoncontent = findViewById(R.id.commoncontent);
@@ -118,8 +119,25 @@ public class RelativeIntution extends AppCompatActivity {
         adjointbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String linkText = "Visit the <a href='http://stackoverflow.com'>StackOverflow</a> web page.\n\n <a href='http://google.com'>Google</a>";
+                commonlink.setText(Html.fromHtml(linkText));
+                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
+                commonlink.setVisibility(View.VISIBLE);
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.adjoint_content));
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        eigenvalue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String linkText = "Visit the <a href='https://drive.google.com/file/d/1ezRx1LiJRAchBteqgI8TIbmED2xE5Enh/view?usp=sharing'>Eigen Values</a> web page.\n\n <a href='http://google.com'>Google</a>";
+                commonlink.setText(Html.fromHtml(linkText));
+                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
+                commonlink.setVisibility(View.VISIBLE);
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.eigenvalue_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });

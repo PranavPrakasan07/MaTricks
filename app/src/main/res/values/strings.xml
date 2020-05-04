@@ -1242,7 +1242,7 @@ int main()								\n
 
     </string>
 
-    <string name="matrices_intution_heading">Matrices : Intution</string>
+    <string name="matrices_intution_heading">Matrices : Intuition</string>
     <string name="matrix_intution_content">
 
         The <b>Matrix</b> is simply an arrangement of numbers, usually enclosed in rounded or square brackets.
@@ -1258,7 +1258,7 @@ int main()								\n
 
     </string>
 
-    <string name="determinants_intution_heading">Determinants : Intution</string>
+    <string name="determinants_intution_heading">Determinants : Intuition</string>
     <string name="det_intution_content">
 
         In order to define the intuitive idea behind determinants let us take the example of a 2x2 matrices and
@@ -1283,7 +1283,18 @@ int main()								\n
     <string name="multiplying_matrices_heading">Multiplying Matrices</string>
     <string name="mult_matrix_content">
 
-        <b>Matrix Multiplication</b> is often.
+        <b>Matrix Multiplication</b> is often learnt the rote way. Well there is a fascinating intuitive idea behind
+        this very concept. Before we move into multiplication, we have to know that matrices are an arrangement of numbers,
+        geometrically, arrangement of vectors.\n
+        \n
+        When matrices are multiplied, say matrix \'B\' multiplied to matrix \'A\' ( A * B ), what we do is a transformation,
+        on the matrix \'A\'.\n
+        \n
+        This sort of explains why matrix multiplication is not always commutative and matrix is required to have
+        certain unique properties in order to be commutative.\n
+        \n
+        The scale by which the transformation is caused, that is, by how many times the system is enlarged or shrunk is defined
+        by the determinant of the matrix, here, by the determinant o the matrix \'B\'.
 
     </string>
 
@@ -1304,11 +1315,25 @@ int main()								\n
     <string name="eigenvalue_heading">Eigenvalue</string>
     <string name="eigenvalue_content">
 
+    Before we move on to know more about eigenvalues, we are to have an understanding about eigen vectors.\n
+        \n
+        Mathematically, it may be represented as a vector multiplied to some other matrix yielding the same
+        vector scaled by some scalar quantity. This scalar quantity being the eigenvalue of the matrix.\n
+        \n
+
 
 
     </string>
     <string name="calculations_button">Calculations</string>
-    <string name="intution_button">Intution</string>
+    <string name="intution_button">Intuition</string>
     <string name="types_of_matrices_button">Types</string>
+
+    <string name="rank_button">Rank of a matrix</string>
+    <string name="rank_content">
+
+        The <b>Rank of a matrix</b> is the number of dimensions in the output of a transformation. If a 3-Dimensional
+        system squishes to a plane, the rank is said to be 2.
+
+    </string>
 
 </resources>
