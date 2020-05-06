@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ViewFlipper;
+
 
 import java.util.Random;
 
@@ -18,38 +18,24 @@ public class RandomCode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_code);
 
-        final Button button = findViewById(R.id.coderAssist1);
-        final Button button1 = findViewById(R.id.coderAssist2);
-        final Button button2 = findViewById(R.id.viewassistant);
-        final TextView textView = findViewById(R.id.welcome1);
-        final TextView textView1 = findViewById(R.id.welcome2);
+        final ViewFlipper viewFlipper = findViewById(R.id.viewFlipperCoder);
 
-        button.setVisibility(View.VISIBLE);
-        button1.setVisibility(View.INVISIBLE);
-        button2.setVisibility(View.INVISIBLE);
+        Button previous = findViewById(R.id.previousbuttoncoder);
+        Button next = findViewById(R.id.nextbuttoncoder);
 
-        textView.setVisibility(View.VISIBLE);
-        textView1.setVisibility(View.INVISIBLE);
-
-        button.setOnClickListener(new View.OnClickListener() {
+        previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                button.setVisibility(View.INVISIBLE);
-                button1.setVisibility(View.INVISIBLE);
-                button2.setVisibility(View.VISIBLE);
-                textView.setVisibility(View.INVISIBLE);
-                textView1.setVisibility(View.INVISIBLE);
-
+                viewFlipper.stopFlipping();
+                viewFlipper.showPrevious();
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setVisibility(View.INVISIBLE);
-                textView1.setVisibility(View.VISIBLE);
-                button1.setVisibility(View.VISIBLE);
-                button2.setVisibility(View.INVISIBLE);
+                viewFlipper.stopFlipping();
+                viewFlipper.showNext();
             }
         });
     }
@@ -65,6 +51,13 @@ public class RandomCode extends AppCompatActivity {
         Intent intent = new Intent(this, MainScreen.class);
         startActivity(intent);
     }
+
+    public void seeListRel(View view){
+
+        Intent intent = new Intent(this, Programme_list.class);
+        startActivity(intent);
+    }
+
 
     Intent intent;
 

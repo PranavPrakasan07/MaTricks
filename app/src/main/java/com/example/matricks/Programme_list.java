@@ -6,14 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainScreen extends AppCompatActivity {
+public class Programme_list extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_screen);
+        setContentView(R.layout.programme_list_relative);
     }
-
 
     public void Transpose(View view){
         Intent intent = new Intent(this, Transpose.class);
@@ -50,13 +49,39 @@ public class MainScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void previousPage(View view){
-        Intent intent = new Intent(this, RandomCode.class);
-        startActivity(intent);
-    }
-
     public void nextPage(View view){
         Intent intent = new Intent(this, MainScreen2.class);
         startActivity(intent);
     }
+    public void SwapMajorDiagonal(View view){
+        Intent intent = new Intent(this, MajorDiagonalSwap.class);
+        startActivity(intent);
+    }
+
+    public void SwapMinorDiagonal(View view){
+        Intent intent = new Intent(this, MinorDiagonalSwap.class);
+        startActivity(intent);
+    }
+
+    public void SwapDiagonal(View view){
+        Intent intent = new Intent(this, Rotate.class);
+        startActivity(intent);
+    }
+
+
+    public void OddMSquare(View view){
+        Intent intent = new Intent(this, OddMagicSquare.class);
+        startActivity(intent);
+    }
+
+    public void MaxSumPathNC(View view){
+        Intent intent = new Intent(this, MaxSumPath.class);
+        startActivity(intent);
+    }
+
+    public void previousPage(View view){
+        Intent intent = new Intent(this, MainScreen.class);
+        startActivity(intent);
+    }
+
 }

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    android:id="@+id/scrollviewPrograms"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background6"
+    tools:context=".Programme_list">
+
+    <RelativeLayout
+        android:id="@+id/listrelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/rotate90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button1"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="Rotate"
+            android:text="@string/rotate_90_button"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/AntiSpiral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rotate90"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="AntiSpiral"
+            android:text="@string/anti_spiral_printing_button"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Spiral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button1"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="Spiral"
+            android:text="@string/spiral_printing_button"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:layout_below="@+id/AntiSpiral"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/ZigZag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="ZigZag"
+            android:text="@string/zig_zag_printing_button"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:layout_below="@+id/Spiral"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/ZPrinting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button1"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="ZPrinting"
+            android:text="@string/button_3"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:layout_below="@+id/ZigZag"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Stochastic_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="StochasticMatrix"
+            android:text="@string/stochastic_matrix_heading"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:layout_below="@+id/ZPrinting"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/back_button_seelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button1"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="previousPage"
+            android:text="@string/back_button"
+            android:textAlignment="gravity"
+            android:textColor="#000"
+            android:layout_below="@+id/Stochastic_matrix"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/transpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="Transpose"
+            android:text="@string/transpose_button"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:layout_below="@id/back_button_seelist"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/front_button_seelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button1"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="nextPage"
+            android:text="@string/front_button"
+            android:textAlignment="gravity"
+            android:textColor="#000"
+            android:layout_below="@id/transpose"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/MaxSumPathNC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="MaxSumPathNC"
+            android:text="@string/maxSumPathNCHeading"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:layout_below="@+id/front_button_seelist"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/minor_swap_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button1"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="SwapMinorDiagonal"
+            android:text="@string/minorswapheading"
+            android:textAlignment="gravity"
+            android:layout_below="@+id/MaxSumPathNC"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/minor_swap_button"
+            android:background="@drawable/custom_button"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

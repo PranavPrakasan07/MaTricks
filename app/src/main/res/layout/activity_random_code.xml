@@ -4,187 +4,162 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background6"
+    android:background="#FFF"
     tools:context=".RandomCode">
 
     <Button
-        android:id="@+id/randomButton"
-        android:layout_width="135dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="188dp"
-        android:background="@drawable/custom_button1"
-        android:onClick="seeRandom"
-        android:text="@string/try_random_button"
-        android:textColor="#FFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/seelistButton"
-        android:layout_width="135dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="236dp"
-        android:background="@drawable/custom_button1"
-        android:onClick="seeList"
-        android:text="@string/see_list_button"
-        android:textColor="#FFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/randomButton"
-        app:layout_constraintVertical_bias="0.626" />
-
-    <TextView
-        android:id="@+id/seeRandom"
-        android:layout_width="202dp"
-        android:layout_height="135dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/random_description"
-        android:textAlignment="gravity"
-        android:textColor="#FFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.366" />
-
-    <TextView
-        android:id="@+id/seeList"
-        android:layout_width="199dp"
-        android:layout_height="134dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/see_list"
-        android:textAlignment="gravity"
-        android:textColor="#FFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.943"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
-
-    <TextView
-        android:id="@+id/general_random"
-        android:layout_width="199dp"
-        android:layout_height="134dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/message_headertouch"
-        android:textAlignment="gravity"
-        android:textColor="#FFF"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.681" />
-
-    <TextView
-        android:id="@+id/howtotoggle"
-        android:layout_width="199dp"
-        android:layout_height="134dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/switchNerd"
-        android:textAlignment="gravity"
-        android:textColor="#FFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855" />
-
-    <Button
-        android:id="@+id/back_button_random"
-        android:layout_width="340dp"
-        android:layout_height="40dp"
-        android:background="@drawable/custom_button1"
+        android:id="@+id/switchbutton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button2"
         android:onClick="goToHomePage"
         android:text="@string/back_button_random"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042" />
-
-    <Button
-        android:id="@+id/coderAssist1"
-        android:layout_width="218dp"
-        android:layout_height="210dp"
-        android:background="@drawable/raisehandcoder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/coderAssist2"
-        android:layout_width="241dp"
-        android:layout_height="221dp"
-        android:background="@drawable/coderthumpsup"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997" />
-
-    <TextView
-        android:id="@+id/welcome1"
-        android:layout_width="170dp"
-        android:layout_height="82dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/welcome1"
-        android:textAlignment="gravity"
-        android:textColor="#FFF"
+        android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintVertical_bias="0.036" />
 
-    <TextView
-        android:id="@+id/welcome2"
-        android:layout_width="170dp"
-        android:layout_height="82dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/welcome2"
-        android:textAlignment="gravity"
-        android:textColor="#FFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
+    <ViewFlipper
+        android:id="@+id/viewFlipperCoder"
+        android:layout_width="333dp"
+        android:layout_height="327dp"
+        android:layout_margin="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autoStart="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
+        app:layout_constraintTop_toBottomOf="@+id/switchbutton"
+        app:layout_constraintVertical_bias="0.20999998">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/randomButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_button1"
+                android:onClick="seeRandom"
+                android:text="@string/try_random_button"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="396dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/dice"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/random_description"
+                android:textAlignment="gravity"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/seelistButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_button1"
+                android:onClick="seeList"
+                android:text="@string/see_list_button"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="543dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/see_list"
+                android:textAlignment="gravity"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/seeprogressButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_button1"
+                android:onClick="seeListRel"
+                android:text="@string/progress_button"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="245dp"
+                tools:layout_editor_absoluteY="543dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/progress"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/see_list"
+                android:textAlignment="gravity"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ViewFlipper>
 
     <Button
-        android:id="@+id/viewassistant"
-        android:layout_width="340dp"
-        android:layout_height="40dp"
-        android:background="@drawable/custom_button1"
-        android:text="@string/see_assistant_button"
+        android:id="@+id/previousbuttoncoder"
+        android:layout_width="79dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/lefthand"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextbuttoncoder"
+        android:layout_width="79dp"
+        android:layout_height="109dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/righthand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

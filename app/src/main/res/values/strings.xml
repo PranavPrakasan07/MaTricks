@@ -396,8 +396,8 @@ int main()								\n
     <string name="i_m_a_programmer_text">I\'m a PROGRAMMER…</string>
     <string name="i_want_learn_more_text">I\'m a LEARNER…</string>
     <string name="tell_us_who_you_are_heading">Who You Are</string>
-    <string name="random_description">{ } : Try a random topic. Click on the button to see today\'s bit of Ma-t-ricks code</string>
-    <string name="see_list">{ } : Choose your topic. Click on the button to see a list of Ma-t-ricks code</string>
+    <string name="random_description">Try a random topic.</string>
+    <string name="see_list">Choose a topic from the list of programmes.</string>
     <string name="choose_heading">Choose</string>
     <string name="coder_meta">[ ] : I\'m looking for codes and coding approaches for matrix related problems</string>
     <string name="nerd_meta">[ ] : I want to learn more about matrices and their applications</string>
@@ -1172,7 +1172,8 @@ int main()								\n
     <string name="trace_matrix_button">Trace of Matrix</string>
     <string name="trace_matrix_content">
 
-
+        The <b>Trace of a matrix</b> is the sum of the elements of the principal diagonal, where the principal diagonal
+        refers to the elements of the matrix having the same row and column index.
 
     </string>
 
@@ -1218,7 +1219,11 @@ int main()								\n
         Some interesting points regarding Symmetric Matrices :\n
         \n
         1. If the Symmetric Matrix is Orthogonal, then the square of the matrix is an Identity Matrix.
-        Hence, the determinant of the matrix will be \'1\'.
+        Hence, the determinant of the matrix will be \'1\'.\n
+        \n
+        2. For a symmetric matrix, the eigen vectors corresponding to the unequal eigenvalues are orthogonal.
+        i.e. say, \'X\' and \'Y\' are two eigen vectors corresponding to the unequal eigenvalues, then X(T) * Y = 0.
+        Or in other words, the inner product is \'0\'.\n
 
     </string>
 
@@ -1308,6 +1313,21 @@ int main()								\n
     <string name="diagonalisation_heading">Diagonalisation of Matrices</string>
     <string name="diagonalisation_content">
 
+        An matrix may be reduced to the diagonal form, or in other words, <b>diagonalised</b>. Mathematically,
+        it can be said that any matrix \'A\' can be reduced to a diagonal matrix \'D\', by applying a transformation, \n
+        \n
+        <b>P(-1) * A * P = D</b>\n
+        \n
+        If there exists an Invertible matrix \'P\'. \'P\' is the collection of eigen vectors corresponding to
+        each eigen value. The matrix \'P\' is called the \'Model Matrix\'. \n
+        \n
+        This would mean that the matrix of order \'n\' has \'n\' linearly independent eigen vectors, otherwise the determinant
+        of the matrix \'P\' would be \'0\' hence, the matrix would not be invertible.
+        \n
+        The resulting diagonal matrix has its element as the eigen values of the matrix \'A\', and is called
+        the \'Spectral Matrix\'.\n
+        \n
+        The above transformation is called the \'Similarity Transformation\'.
 
 
     </string>
@@ -1320,8 +1340,11 @@ int main()								\n
         Mathematically, it may be represented as a vector multiplied to some other matrix yielding the same
         vector scaled by some scalar quantity. This scalar quantity being the eigenvalue of the matrix.\n
         \n
-
-
+        Eigen vectors are vectors that do not undergo any other change by a scaling, on applying a transformation.\n
+        \n
+        A normalised eigen vector is an eigen vector divided by the square root of the sum of the squares of the
+        elements in the eigen vector.\n
+        \n
 
     </string>
     <string name="calculations_button">Calculations</string>
@@ -1335,5 +1358,6 @@ int main()								\n
         system squishes to a plane, the rank is said to be 2.
 
     </string>
+    <string name="progress_button">Progress</string>
 
 </resources>
