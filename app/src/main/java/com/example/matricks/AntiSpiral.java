@@ -21,7 +21,7 @@ public class AntiSpiral extends AppCompatActivity {
         Button button = findViewById(R.id.StochMatrix);
         final ScrollView scrollView = findViewById(R.id.scrollerid);
         final Button button1 = findViewById(R.id.hideCodeAntiSpiral);
-        final TextView textView = findViewById(R.id.problemAntiSpiral);
+        final ScrollView textView = findViewById(R.id.problemAntiSpiral);
 
         scrollView.setVisibility(View.INVISIBLE);
         button1.setVisibility(View.INVISIBLE);

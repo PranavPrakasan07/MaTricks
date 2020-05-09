@@ -8,7 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ViewFlipper;
 
-public class CategoriesNerd extends AppCompatActivity {
+public class CategoriesNerd extends AppCompatActivity{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class CategoriesNerd extends AppCompatActivity {
 
         viewFlipper.setAutoStart(true);
         viewFlipper.setFlipInterval(2000);
+
 
         prev.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,5 +86,4 @@ public class CategoriesNerd extends AppCompatActivity {
         Intent intent = new Intent(CategoriesNerd.this, MainActivity.class);
         startActivity(intent);
     }
-
 }

@@ -14,6 +14,11 @@ public class Programme_list extends AppCompatActivity {
         setContentView(R.layout.programme_list_relative);
     }
 
+    public void goToCategoriesCoder(View view){
+        Intent intent = new Intent(this, RandomCode.class);
+        startActivity(intent);
+    }
+
     public void Transpose(View view){
         Intent intent = new Intent(this, Transpose.class);
         startActivity(intent);

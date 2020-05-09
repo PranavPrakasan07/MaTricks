@@ -62,20 +62,31 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.193" />
 
-    <TextView
+    <ScrollView
         android:id="@+id/problemAntiSpiral"
-        android:layout_width="298dp"
-        android:layout_height="407dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/codeAntiSpiral"
-        android:textAlignment="gravity"
-        android:textSize="20sp"
+        android:layout_width="280dp"
+        android:layout_height="371dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+        <TextView
+            android:layout_width="298dp"
+            android:layout_height="407dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/codeAntiSpiral"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.584"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.745" />
+
+
+    </ScrollView>
 
     <Button
         android:id="@+id/hideCodeAntiSpiral"

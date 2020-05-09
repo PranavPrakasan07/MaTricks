@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF"
+    android:id="@+id/id"
     tools:context=".RandomCode">
 
     <Button
         android:id="@+id/switchbutton"
-        android:layout_width="300dp"
+        android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_button2"
@@ -25,14 +26,15 @@
 
     <ViewFlipper
         android:id="@+id/viewFlipperCoder"
-        android:layout_width="333dp"
-        android:layout_height="327dp"
+        android:layout_width="275dp"
+        android:layout_height="300dp"
         android:layout_margin="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="175dp"
         android:autoStart="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,26 +46,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/randomButton"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/custom_button1"
+                android:background="@drawable/custom_button3"
                 android:onClick="seeRandom"
                 android:text="@string/try_random_button"
-                android:textColor="#FFF"
+                android:textColor="#000"
                 android:textSize="25sp"
                 tools:layout_editor_absoluteX="6dp"
                 tools:layout_editor_absoluteY="396dp" />
 
             <TextView
+                android:id="@+id/randomTextView"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
+                android:onClick="seeRandom"
                 android:background="@drawable/dice"
                 android:gravity="center_vertical|center_horizontal"
                 android:text="@string/random_description"
@@ -76,17 +79,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/seelistButton"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/custom_button1"
+                android:background="@drawable/custom_button3"
                 android:onClick="seeList"
                 android:text="@string/see_list_button"
-                android:textColor="#FFF"
+                android:textColor="#000"
                 android:textSize="25sp"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="543dp" />
@@ -96,6 +98,7 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
+                android:onClick="seeList"
                 android:background="@drawable/custom_button3"
                 android:gravity="center_vertical|center_horizontal"
                 android:text="@string/see_list"
@@ -108,17 +111,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
             android:orientation="vertical">
 
             <Button
                 android:id="@+id/seeprogressButton"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@drawable/custom_button1"
+                android:background="@drawable/custom_button3"
                 android:onClick="seeListRel"
                 android:text="@string/progress_button"
-                android:textColor="#FFF"
+                android:textColor="#000"
                 android:textSize="25sp"
                 tools:layout_editor_absoluteX="245dp"
                 tools:layout_editor_absoluteY="543dp" />
@@ -128,6 +130,7 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
+                android:onClick="seeListRel"
                 android:background="@drawable/progress"
                 android:gravity="center_vertical|center_horizontal"
                 android:text="@string/see_list"
@@ -141,8 +144,8 @@
 
     <Button
         android:id="@+id/previousbuttoncoder"
-        android:layout_width="79dp"
-        android:layout_height="109dp"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginBottom="24dp"
@@ -152,8 +155,8 @@
 
     <Button
         android:id="@+id/nextbuttoncoder"
-        android:layout_width="79dp"
-        android:layout_height="109dp"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="24dp"

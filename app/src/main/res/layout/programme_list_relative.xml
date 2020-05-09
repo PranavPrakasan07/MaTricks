@@ -15,18 +15,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="goToCategoriesCoder"
+            android:text="@string/back_button"
+            android:textAlignment="gravity"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/rotate90"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/custom_button1"
             android:gravity="center_vertical|center_horizontal"
             android:onClick="Rotate"
             android:text="@string/rotate_90_button"
             android:textAlignment="gravity"
+            android:layout_below="@id/back_button"
             android:textColor="#FFF"
             android:textSize="20sp" />
 

@@ -407,7 +407,11 @@ int main()								\n
     <string name="hide_code_button">Hide Code</string>
     <string name="spiral_code">Hi</string>
     <string name="code_zigzag">Hi</string>
-    <string name="codeAntiSpiral">Hi</string>
+    <string name="codeAntiSpiral">
+
+        The problem is to find a method to check\n\n\n\n\n\n\n\n\n\n\n\n\234234\n\n\n\n\n\n45646\n\n
+
+    </string>
     <string name="code_Transpose">Hi</string>
     <string name="code_ZPrinting">Hi</string>
     <string name="z_printing_heading">Z-Printing</string>
@@ -854,7 +858,17 @@ int main()										\n
     </string>
 
     <string name="stochastic_matrix_heading">Stochastic Matrix</string>
-    <string name="stochastic_matrix_problem">Hi</string>
+    <string name="stochastic_matrix_problem">
+
+        The problem is to check whether a given matrix is a Stochastic Matrix. \n
+        \n
+        A Stochastic Matrix has to be \n
+        \n
+        1. A positive real-valued matrix,\n
+        2. \n\n\n\n\n\n
+        234234413\\n\n\n\n\n\n\n\n\\n\n\n\n\n456456
+
+    </string>
     <string name="stochastic_matrix_code">
 
 #include&lt;iostream&gt;								\n
@@ -1347,9 +1361,9 @@ int main()								\n
         \n
 
     </string>
-    <string name="calculations_button">Calculations</string>
-    <string name="intution_button">Intuition</string>
-    <string name="types_of_matrices_button">Types</string>
+    <string name="calculations_button">CALCULATION</string>
+    <string name="intution_button">INTUITION</string>
+    <string name="types_of_matrices_button">TYPES</string>
 
     <string name="rank_button">Rank of a matrix</string>
     <string name="rank_content">
