@@ -64,12 +64,13 @@
 
     <TextView
         android:id="@+id/problemTranspose"
-        android:layout_width="301dp"
+        android:layout_width="275dp"
         android:layout_height="402dp"
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/code_Transpose"
         android:textAlignment="gravity"
         android:textSize="20sp"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.584"

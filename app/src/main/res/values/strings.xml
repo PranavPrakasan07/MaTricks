@@ -402,18 +402,38 @@ int main()								\n
     <string name="coder_meta">[ ] : I\'m looking for codes and coding approaches for matrix related problems</string>
     <string name="nerd_meta">[ ] : I want to learn more about matrices and their applications</string>
     <string name="approach_button">Tell me the approach</string>
-    <string name="rotateCode">Hi</string>
-    <string name="hint_code_button">Maybe, a hint will do !</string>
-    <string name="hide_code_button">Hide Code</string>
-    <string name="spiral_code">Hi</string>
-    <string name="code_zigzag">Hi</string>
-    <string name="codeAntiSpiral">
+    <string name="rotateCode">
 
-        The problem is to find a method to check\n\n\n\n\n\n\n\n\n\n\n\n\234234\n\n\n\n\n\n45646\n\n
+        The problem is to rotate a matrix by 90 degrees, similar to the problem of rotation of an image.
 
     </string>
-    <string name="code_Transpose">Hi</string>
-    <string name="code_ZPrinting">Hi</string>
+    <string name="hint_code_button">Maybe, a hint will do !</string>
+    <string name="hide_code_button">Hide Code</string>
+    <string name="spiral_code">
+
+        The problem is to print the matrix in spirally-traversed order.
+
+    </string>
+    <string name="code_zigzag">
+
+        The problem is to print the matrix in zig-zag traversed order.
+
+    </string>
+    <string name="codeAntiSpiral">
+
+        The problem is to print the matrix in the anti-spiral traversed order.
+
+    </string>
+    <string name="code_Transpose">
+
+        The problem is to find the transpose of a matrix.
+
+    </string>
+    <string name="code_ZPrinting">
+
+        The problem is to print the matrix in a Z-Traversed order.
+
+    </string>
     <string name="z_printing_heading">Z-Printing</string>
     <string name="ZPcode">
 
@@ -471,7 +491,11 @@ int main()										\n
     <string name="message_headertouch">{ } : And, you can move back to the previous page by clicking once in the header</string>
 
     <string name="majorswapheading">Swap Major Diagonal</string>
-    <string name="majordiagonalprobelem">Hi</string>
+    <string name="majordiagonalprobelem">
+
+        The problem is to swap the elements of the major diagonal.
+
+    </string>
     <string name="majorcode">
 
 #include&lt;iostream&gt;						\n
@@ -548,7 +572,11 @@ int main()							\n
     </string>
 
     <string name="minorswapheading">Swap Minor Diagonal</string>
-    <string name="minordiagonalproblem">Hi</string>
+    <string name="minordiagonalproblem">
+
+        The problem is to swap the elements of the minor diagonal.
+
+    </string>
     <string name="minorcode">
 
 #include&lt;iostream&gt;							\n
@@ -626,7 +654,11 @@ int main()							\n
 
 
     <string name="swapheading">Swap Diagonals</string>
-    <string name="diagonalproblem">Hi</string>
+    <string name="diagonalproblem">
+
+        The problem is to swap the diagonals of a matrix.
+
+    </string>
     <string name="swap_diagonals">
 
 #include&lt;iostream&gt;							\n
@@ -703,7 +735,16 @@ int main()							\n
     </string>
 
     <string name="oddmagicsquareheading">Odd Magic Square</string>
-    <string name="problemoddmagicsquare">Hi</string>
+    <string name="problemoddmagicsquare">
+
+
+        To find the magic square of any odd order.\n
+        \n
+        A <b>Magic Square</b> is a matrix of which the sum of the elements of the row, the column, and the diagonals,
+        all sum up to the same value.
+
+
+    </string>
     <string name="oddmagicsquarecode">
 
         #include&lt;iostream&lt;		\n
@@ -784,7 +825,7 @@ int main()					\n
     </string>
 
     <string name="maxSumPathNCHeading">Maximum Sum Path</string>
-    <string name="problemMaxSumPathNC">Hi</string>
+    <string name="problemMaxSumPathNC">Finding the maximum sum path</string>
     <string name="maxSumPathNCcode">
 
 #include&lt;iostream&gt;										\n
@@ -1215,7 +1256,8 @@ int main()								\n
     <string name="sum_dets_button">Sum of Determinants</string>
     <string name="sum_dets_content">
 
-
+        The sum of determinants may be performed by adding the corresponding elements of a row of the determinants,
+        keeping other rows the same.
 
     </string>
 

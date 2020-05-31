@@ -61,12 +61,13 @@
 
     <TextView
         android:id="@+id/problemSpiral"
-        android:layout_width="298dp"
+        android:layout_width="275dp"
         android:layout_height="407dp"
         android:gravity="center_vertical|center_horizontal"
         android:text="@string/spiral_code"
         android:textAlignment="gravity"
         android:textSize="20sp"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.584"

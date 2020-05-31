@@ -113,47 +113,47 @@
             android:layout_below="@+id/ZPrinting"
             android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/back_button_seelist"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button1"
-            android:gravity="center_vertical|center_horizontal"
-            android:onClick="previousPage"
-            android:text="@string/back_button"
-            android:textAlignment="gravity"
-            android:textColor="#000"
-            android:layout_below="@+id/Stochastic_matrix"
-            android:textSize="20sp" />
+<!--        <Button-->
+<!--            android:id="@+id/back_button_seelist"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:background="@drawable/custom_button1"-->
+<!--            android:gravity="center_vertical|center_horizontal"-->
+<!--            android:onClick="previousPage"-->
+<!--            android:text="@string/back_button"-->
+<!--            android:textAlignment="gravity"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_below="@+id/Stochastic_matrix"-->
+<!--            android:textSize="20sp" />-->
 
         <Button
             android:id="@+id/transpose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button1"
             android:gravity="center_vertical|center_horizontal"
             android:onClick="Transpose"
             android:text="@string/transpose_button"
             android:textAlignment="gravity"
             android:textColor="#FFF"
-            android:layout_below="@id/back_button_seelist"
+            android:layout_below="@id/Stochastic_matrix"
             android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/front_button_seelist"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button1"
-            android:gravity="center_vertical|center_horizontal"
-            android:onClick="nextPage"
-            android:text="@string/front_button"
-            android:textAlignment="gravity"
-            android:textColor="#000"
-            android:layout_below="@id/transpose"
-            android:textSize="20sp" />
+<!--        <Button-->
+<!--            android:id="@+id/front_button_seelist"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:background="@drawable/custom_button1"-->
+<!--            android:gravity="center_vertical|center_horizontal"-->
+<!--            android:onClick="nextPage"-->
+<!--            android:text="@string/front_button"-->
+<!--            android:textAlignment="gravity"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_below="@id/transpose"-->
+<!--            android:textSize="20sp" />-->
 
         <Button
             android:id="@+id/MaxSumPathNC"
@@ -166,7 +166,7 @@
             android:text="@string/maxSumPathNCHeading"
             android:textAlignment="gravity"
             android:textColor="#FFF"
-            android:layout_below="@+id/front_button_seelist"
+            android:layout_below="@+id/transpose"
             android:textSize="20sp" />
 
         <Button
