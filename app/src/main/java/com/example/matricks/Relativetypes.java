@@ -31,6 +31,7 @@ public class Relativetypes extends AppCompatActivity {
         final Button singularmatbutton = findViewById(R.id.singularmatrixbutton);
         final Button elementarybutton = findViewById(R.id.elementarymatrixbutton);
         final Button signaturebutton = findViewById(R.id.signaturematrixbutton);
+        final Button frobbutton = findViewById(R.id.frobmatrixbutton);
 
         final TextView commoncontent = findViewById(R.id.commoncontent);
         final ScrollView commonscroller = findViewById(R.id.commonscroller);
@@ -139,6 +140,15 @@ public class Relativetypes extends AppCompatActivity {
             public void onClick(View v) {
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.signature_matrix_content));
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        frobbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.frobenius_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });

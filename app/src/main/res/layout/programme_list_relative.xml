@@ -26,7 +26,7 @@
             android:onClick="goToCategoriesCoder"
             android:text="@string/back_button"
             android:textAlignment="gravity"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="20sp" />
 
         <Button
@@ -40,7 +40,7 @@
             android:text="@string/rotate_90_button"
             android:textAlignment="gravity"
             android:layout_below="@id/back_button"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="20sp" />
 
         <Button
@@ -49,12 +49,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/rotate90"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button1"
             android:gravity="center_vertical|center_horizontal"
             android:onClick="AntiSpiral"
             android:text="@string/anti_spiral_printing_button"
             android:textAlignment="gravity"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="20sp" />
 
         <Button
@@ -67,7 +67,7 @@
             android:onClick="Spiral"
             android:text="@string/spiral_printing_button"
             android:textAlignment="gravity"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:layout_below="@+id/AntiSpiral"
             android:textSize="20sp" />
 
@@ -76,12 +76,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button1"
             android:gravity="center_vertical|center_horizontal"
             android:onClick="ZigZag"
             android:text="@string/zig_zag_printing_button"
             android:textAlignment="gravity"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:layout_below="@+id/Spiral"
             android:textSize="20sp" />
 
@@ -95,7 +95,7 @@
             android:onClick="ZPrinting"
             android:text="@string/button_3"
             android:textAlignment="gravity"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:layout_below="@+id/ZigZag"
             android:textSize="20sp" />
 
@@ -104,12 +104,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button1"
             android:gravity="center_vertical|center_horizontal"
             android:onClick="StochasticMatrix"
             android:text="@string/stochastic_matrix_heading"
             android:textAlignment="gravity"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:layout_below="@+id/ZPrinting"
             android:textSize="20sp" />
 
@@ -137,7 +137,7 @@
             android:onClick="Transpose"
             android:text="@string/transpose_button"
             android:textAlignment="gravity"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:layout_below="@id/Stochastic_matrix"
             android:textSize="20sp" />
 
@@ -160,12 +160,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button1"
             android:gravity="center_vertical|center_horizontal"
             android:onClick="MaxSumPathNC"
             android:text="@string/maxSumPathNCHeading"
             android:textAlignment="gravity"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:layout_below="@+id/transpose"
             android:textSize="20sp" />
 
@@ -180,16 +180,16 @@
             android:text="@string/minorswapheading"
             android:textAlignment="gravity"
             android:layout_below="@+id/MaxSumPathNC"
-            android:textColor="#FFF"
+            android:textColor="#000"
             android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/top"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_below="@id/minor_swap_button"
-            android:background="@drawable/custom_button"/>
+<!--        <Button-->
+<!--            android:id="@+id/top"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_below="@id/minor_swap_button"-->
+<!--            android:background="@drawable/custom_button"/>-->
 
 
     </RelativeLayout>

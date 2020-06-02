@@ -108,37 +108,37 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
 
-            <Button
-                android:id="@+id/seeprogressButton"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/custom_button3"
-                android:onClick="seeList"
-                android:text="@string/progress_button"
-                android:textColor="#000"
-                android:textSize="25sp"
-                tools:layout_editor_absoluteX="245dp"
-                tools:layout_editor_absoluteY="543dp" />
+<!--            <Button-->
+<!--                android:id="@+id/seeprogressButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:background="@drawable/custom_button3"-->
+<!--                android:onClick="seeList"-->
+<!--                android:text="@string/progress_button"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="25sp"-->
+<!--                tools:layout_editor_absoluteX="245dp"-->
+<!--                tools:layout_editor_absoluteY="543dp" />-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="30dp"
-                android:layout_weight="1"
-                android:onClick="seeList"
-                android:background="@drawable/progress"
-                android:gravity="center_vertical|center_horizontal"
-                android:text="@string/see_list"
-                android:textAlignment="gravity"
-                android:textColor="#000"
-                android:textSize="20sp" />
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:onClick="seeList"-->
+<!--                android:background="@drawable/progress"-->
+<!--                android:gravity="center_vertical|center_horizontal"-->
+<!--                android:text="@string/see_list"-->
+<!--                android:textAlignment="gravity"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20sp" />-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
     </ViewFlipper>
 

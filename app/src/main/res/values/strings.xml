@@ -405,6 +405,14 @@ int main()								\n
     <string name="rotateCode">
 
         The problem is to rotate a matrix by 90 degrees, similar to the problem of rotation of an image.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
     </string>
     <string name="hint_code_button">Maybe, a hint will do !</string>
@@ -412,26 +420,66 @@ int main()								\n
     <string name="spiral_code">
 
         The problem is to print the matrix in spirally-traversed order.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
     </string>
     <string name="code_zigzag">
 
         The problem is to print the matrix in zig-zag traversed order.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
     </string>
     <string name="codeAntiSpiral">
 
         The problem is to print the matrix in the anti-spiral traversed order.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
     </string>
     <string name="code_Transpose">
 
         The problem is to find the transpose of a matrix.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
     </string>
     <string name="code_ZPrinting">
 
         The problem is to print the matrix in a Z-Traversed order.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
     </string>
     <string name="z_printing_heading">Z-Printing</string>
@@ -494,6 +542,13 @@ int main()										\n
     <string name="majordiagonalprobelem">
 
         The problem is to swap the elements of the major diagonal.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
 
     </string>
     <string name="majorcode">
@@ -575,6 +630,14 @@ int main()							\n
     <string name="minordiagonalproblem">
 
         The problem is to swap the elements of the minor diagonal.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
     </string>
     <string name="minorcode">
@@ -657,6 +720,14 @@ int main()							\n
     <string name="diagonalproblem">
 
         The problem is to swap the diagonals of a matrix.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
     </string>
     <string name="swap_diagonals">
@@ -742,6 +813,14 @@ int main()							\n
         \n
         A <b>Magic Square</b> is a matrix of which the sum of the elements of the row, the column, and the diagonals,
         all sum up to the same value.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
 
 
     </string>
@@ -825,7 +904,19 @@ int main()					\n
     </string>
 
     <string name="maxSumPathNCHeading">Maximum Sum Path</string>
-    <string name="problemMaxSumPathNC">Finding the maximum sum path</string>
+    <string name="problemMaxSumPathNC">
+        The problem is to find the path having the maximum sum, where distances are represented via an
+        adjacency matrix.
+        \n
+        \n
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
+
+    </string>
     <string name="maxSumPathNCcode">
 
 #include&lt;iostream&gt;										\n
@@ -903,11 +994,14 @@ int main()										\n
 
         The problem is to check whether a given matrix is a Stochastic Matrix. \n
         \n
-        A Stochastic Matrix has to be \n
         \n
-        1. A positive real-valued matrix,\n
-        2. \n\n\n\n\n\n
-        234234413\\n\n\n\n\n\n\n\n\\n\n\n\n\n456456
+        Tap once on the program heading to return to the previous screen.
+        \n
+        \n
+        Long-press on the program heading, to view code.
+        \n
+        \n
+
 
     </string>
     <string name="stochastic_matrix_code">
@@ -1171,7 +1265,13 @@ int main()								\n
     </string>
 
     <string name="orthogonal_matrix_button">Orthogonal Matrix</string>
-    <string name="orthogonal_content">hi</string>
+    <string name="orthogonal_content">
+
+        An <b>Orthogonal Matrix</b> is one which when multiplied with its transpose, yields an identity matrix.\n
+        \n
+        With the ame argument, one may also state that the inverse of an orthogonal matrix is the transpose of the original matrix.
+
+    </string>
 
     <string name="binary_matrix_button">Binary Matrix</string>
     <string name="binary_content">
@@ -1256,7 +1356,10 @@ int main()								\n
     <string name="sum_dets_button">Sum of Determinants</string>
     <string name="sum_dets_content">
 
-        The sum of determinants may be performed by adding the corresponding elements of a row of the determinants,
+        The determinant is a value associated with matrices, therefore, the sum of two determinant is essentially
+        the sum of two values.\n
+        \n
+        However, a determinant may be split into different determinants, by splitting the corresponding elements of a row of the determinant,
         keeping other rows the same.
 
     </string>

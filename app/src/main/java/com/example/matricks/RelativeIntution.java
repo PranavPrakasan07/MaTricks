@@ -26,23 +26,25 @@ public class RelativeIntution extends AppCompatActivity {
         final Button matrixsumbutton = findViewById(R.id.sum_matrices_button);
         final Button detsumbutton = findViewById(R.id.sum_dets_button);
         final Button multiplyingmatrixbutton = findViewById(R.id.multiplying_matrices_button);
-        final Button multiplyingdetbutton = findViewById(R.id.multiplying_dets_button);
+//        final Button multiplyingdetbutton = findViewById(R.id.multiplying_dets_button);
         final Button tracebutton = findViewById(R.id.trace_matrix_button);
         final Button adjointbutton = findViewById(R.id.cofactor_button);
         final Button cofactorbutton = findViewById(R.id.adjoint_button);
         final Button eigenvalue = findViewById(R.id.eigenvalue_button);
+        final Button diagonalisation = findViewById(R.id.diagonalisation_button);
 
-        final TextView commonlink = findViewById(R.id.commonlink);
+
+//        final TextView commonlink = findViewById(R.id.commonlink);
         final TextView commoncontent = findViewById(R.id.commoncontent);
         final ScrollView commonscroller = findViewById(R.id.commonscroller);
 
         intromatrixbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String linkText = "Visit the <a href='http://stackoverflow.com'>StackOverflow</a> web page.\n\n <a href='http://google.com'>Google</a>";
-                commonlink.setText(Html.fromHtml(linkText));
-                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
-                commonlink.setVisibility(View.VISIBLE);
+//                String linkText = "Visit the <a href='http://stackoverflow.com'>StackOverflow</a> web page.\n\n <a href='http://google.com'>Google</a>";
+//                commonlink.setText(Html.fromHtml(linkText));
+//                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
+//                commonlink.setVisibility(View.VISIBLE);
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.matrix_intution_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
@@ -61,10 +63,6 @@ public class RelativeIntution extends AppCompatActivity {
         matrixsumbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String linkText = "Visit the <a href='http://google.com'>Google</a> web page.";
-                commonlink.setText(Html.fromHtml(linkText));
-                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
-                commonlink.setVisibility(View.VISIBLE);
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.matrixsum_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
@@ -89,14 +87,14 @@ public class RelativeIntution extends AppCompatActivity {
             }
         });
 
-        multiplyingdetbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                commonscroller.setVisibility(View.VISIBLE);
-                commoncontent.setText(getResources().getString(R.string.mult_dets_content));
-                relativeLayout.setVisibility(View.INVISIBLE);
-            }
-        });
+//        multiplyingdetbutton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                commonscroller.setVisibility(View.VISIBLE);
+//                commoncontent.setText(getResources().getString(R.string.mult_dets_content));
+//                relativeLayout.setVisibility(View.INVISIBLE);
+//            }
+//        });
 
         tracebutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,10 +117,6 @@ public class RelativeIntution extends AppCompatActivity {
         adjointbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String linkText = "Visit the <a href='http://stackoverflow.com'>StackOverflow</a> web page.\n\n <a href='http://google.com'>Google</a>";
-                commonlink.setText(Html.fromHtml(linkText));
-                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
-                commonlink.setVisibility(View.VISIBLE);
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.adjoint_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
@@ -132,12 +126,17 @@ public class RelativeIntution extends AppCompatActivity {
         eigenvalue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String linkText = "Visit the <a href='https://drive.google.com/file/d/1ezRx1LiJRAchBteqgI8TIbmED2xE5Enh/view?usp=sharing'>Eigen Values</a> web page.\n\n <a href='http://google.com'>Google</a>";
-                commonlink.setText(Html.fromHtml(linkText));
-                commonlink.setMovementMethod(LinkMovementMethod.getInstance());
-                commonlink.setVisibility(View.VISIBLE);
                 commonscroller.setVisibility(View.VISIBLE);
                 commoncontent.setText(getResources().getString(R.string.eigenvalue_content));
+                relativeLayout.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        diagonalisation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                commonscroller.setVisibility(View.VISIBLE);
+                commoncontent.setText(getResources().getString(R.string.diagonalisation_content));
                 relativeLayout.setVisibility(View.INVISIBLE);
             }
         });
@@ -145,7 +144,7 @@ public class RelativeIntution extends AppCompatActivity {
         commoncontent.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                commonlink.setVisibility(View.INVISIBLE);
+//                commonlink.setVisibility(View.INVISIBLE);
                 commonscroller.setVisibility(View.INVISIBLE);
                 relativeLayout.setVisibility(View.VISIBLE);
 

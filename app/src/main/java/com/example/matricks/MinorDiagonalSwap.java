@@ -61,7 +61,19 @@ public class MinorDiagonalSwap extends AppCompatActivity {
 
     public void hintMinorSwap(View view){
 
-        String s = "Try rotation of the matrix, and following a pattern. Try using a stack to reverse the spiral...";
+        String s = "Keep account of the indices of the non-primary diagonal of the matrix.";
+
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
+        View view1 = toast.getView();
+
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
+
+    public void approachMinorDiagonal(View view) {
+
+        String s = "Loop through till half of the major diagonal, using the j=n-i indices and swap the elements with 'i == j'.";
 
         Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
         View view1 = toast.getView();

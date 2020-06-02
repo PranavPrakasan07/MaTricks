@@ -71,4 +71,18 @@ public class AntiSpiral extends AppCompatActivity {
         toast.show();
     }
 
+    public void approachAntiSpiral(View view){
+
+        String s = "First, store all the elements wih row index 0, and column index 'n' in a stack. " +
+                "Now, for the remaining matrix, excluding this, rotate the matrix by 90 degrees, and repeat the same. " +
+                "Finally, pop the stack out printing its contents.";
+
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_LONG);
+        View view1 = toast.getView();
+
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
+
 }

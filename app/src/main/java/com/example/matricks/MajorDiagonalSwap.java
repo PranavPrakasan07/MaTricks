@@ -61,7 +61,19 @@ public class MajorDiagonalSwap extends AppCompatActivity {
 
     public void hintMajorDiagonal(View view){
 
-        String s = "Try rotation of the matrix, and following a pattern. Try using a stack to reverse the spiral...";
+        String s = "Take into account the indices of the elements of the major diagonal.";
+
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
+        View view1 = toast.getView();
+
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
+
+    public void approachMajorDiagonal(View view){
+
+        String s = "Loop through till half of the major diagonal, using the i==j indices and swap the elements with 'n-i'.";
 
         Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
         View view1 = toast.getView();

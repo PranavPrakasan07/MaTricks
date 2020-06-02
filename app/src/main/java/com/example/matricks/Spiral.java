@@ -70,4 +70,18 @@ public class Spiral extends AppCompatActivity {
 
         toast.show();
     }
+
+    public void approachSpiral(View view){
+
+        String s = "First, store all the elements wih row index 0, and column index 'n'. " +
+                "Now, for the remaining matrix, excluding this, rotate the matrix by 90 degrees, and repeat the same. " +
+                "Finally, print its contents.";
+
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_LONG);
+        View view1 = toast.getView();
+
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
 }
