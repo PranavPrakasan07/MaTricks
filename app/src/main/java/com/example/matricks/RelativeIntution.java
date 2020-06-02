@@ -28,8 +28,8 @@ public class RelativeIntution extends AppCompatActivity {
         final Button multiplyingmatrixbutton = findViewById(R.id.multiplying_matrices_button);
 //        final Button multiplyingdetbutton = findViewById(R.id.multiplying_dets_button);
         final Button tracebutton = findViewById(R.id.trace_matrix_button);
-        final Button adjointbutton = findViewById(R.id.cofactor_button);
-        final Button cofactorbutton = findViewById(R.id.adjoint_button);
+        final Button cofactorbutton = findViewById(R.id.cofactor_button);
+        final Button  adjointbutton= findViewById(R.id.adjoint_button);
         final Button eigenvalue = findViewById(R.id.eigenvalue_button);
         final Button diagonalisation = findViewById(R.id.diagonalisation_button);
 

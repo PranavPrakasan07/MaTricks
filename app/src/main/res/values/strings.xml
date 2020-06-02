@@ -1300,9 +1300,13 @@ int main()								\n
     <string name="cofactor_matrix_button">Cofactor Matrix</string>
     <string name="cofactor_content">
 
-        The <b>Cofactor</b> of a matrix is defined as the Co-factor matrix.
-
-
+        The <b>Cofactor</b> of a matrix is defined as the number you get when you remove the
+        column and row of a designated element in a matrix, which is just a numerical grid in
+        the form of a rectangle or a square.
+        \n
+        \n
+        The adjugate has sometimes been called the "adjoint", but today the "adjoint"
+        of a matrix normally refers to its corresponding adjoint operator, which is its conjugate transpose.
 
     </string>
 
