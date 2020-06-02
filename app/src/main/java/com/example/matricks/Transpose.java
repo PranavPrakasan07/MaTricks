@@ -70,4 +70,16 @@ public class Transpose extends AppCompatActivity {
         toast.show();
     }
 
+    public void approachTranspose(View view){
+
+        String s = "Swap the elements with index (i,j) with (j,i) till diagonal";
+
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_LONG);
+
+        View view1 = toast.getView();
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
+
 }

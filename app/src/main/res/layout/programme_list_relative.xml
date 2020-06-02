@@ -183,13 +183,17 @@
             android:textColor="#000"
             android:textSize="20sp" />
 
-<!--        <Button-->
-<!--            android:id="@+id/top"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginBottom="15dp"-->
-<!--            android:layout_below="@id/minor_swap_button"-->
-<!--            android:background="@drawable/custom_button"/>-->
+        <Button
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/oddmagicsquareheading"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:onClick="OddMSquare"
+            android:layout_below="@id/minor_swap_button"
+            android:background="@drawable/custom_button1"/>
 
 
     </RelativeLayout>

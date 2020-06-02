@@ -175,19 +175,19 @@
         android:textSize="20sp"
         android:layout_below="@+id/cofactor_button" />
 
-    <Button
-        android:id="@+id/b2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/custom_button1"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/front_button"
-        android:textAlignment="gravity"
-        android:textColor="#000"
-        android:textSize="20sp"
-        android:layout_below="@+id/adjoint_button" />
+<!--    <Button-->
+<!--        android:id="@+id/b2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@drawable/custom_button1"-->
+<!--        android:gravity="center_vertical|center_horizontal"-->
+<!--        android:text="@string/front_button"-->
+<!--        android:textAlignment="gravity"-->
+<!--        android:textColor="#000"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_below="@+id/adjoint_button" />-->
 
 </RelativeLayout>
 

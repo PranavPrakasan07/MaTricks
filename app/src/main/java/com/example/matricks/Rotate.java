@@ -71,6 +71,15 @@ public class Rotate extends AppCompatActivity {
         toast.show();
     }
 
+    public void approachRotateMatrix(View view)
+    {
+        String s = "Take the transpose of the matrix and swap column 'i' with colomn 'n-i' till i == n/2";
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
+        View view1 = toast.getView();
 
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
 
 }

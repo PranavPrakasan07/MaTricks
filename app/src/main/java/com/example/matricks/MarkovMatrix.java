@@ -61,7 +61,21 @@ public class MarkovMatrix extends AppCompatActivity {
 
     public void hintStochasticMatrix(View view){
 
-        String s = "Try rotation of the matrix, and following a pattern. Try using a stack to reverse the spiral...";
+        String s = "A Stochastic Matrix is one which has non-negative, real-valued entries, with values " +
+                "in the range [0,1], the row-wise, column-wise, or both summing up to 1, depending upon the type of the " +
+                "Stochastic Matrix. ";
+
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_LONG);
+        View view1 = toast.getView();
+
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
+
+    public void approachStochasticMatrix(View view){
+
+        String s = "Check the conditions one by one, if all satisfy, the matrix is a Stochastic Matrix.";
 
         Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
         View view1 = toast.getView();

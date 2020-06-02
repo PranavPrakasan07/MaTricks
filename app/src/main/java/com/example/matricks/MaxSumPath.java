@@ -60,7 +60,19 @@ public class MaxSumPath extends AppCompatActivity {
 
     public void hintMaxSumPathNC(View view){
 
-        String s = "Try rotation of the matrix, and following a pattern. Try using a stack to reverse the spiral...";
+        String s = "Be greedy...";
+
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
+        View view1 = toast.getView();
+
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
+
+    public void approachMaxSumPathNC(View view){
+
+        String s = "Choose the biggest edge at all times.";
 
         Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
         View view1 = toast.getView();

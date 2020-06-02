@@ -69,5 +69,16 @@ public class ZPrinting extends AppCompatActivity {
         toast.show();
     }
 
+    public void approachZPrinting(View view)
+    {
+        String s = "Print the row with index '0', then print the minor diagonal, them print the row with index 'n-1'";
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_SHORT);
+        View view1 = toast.getView();
+
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
+    }
+
 
 }

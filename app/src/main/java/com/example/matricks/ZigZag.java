@@ -69,7 +69,17 @@ public class ZigZag extends AppCompatActivity {
         view1.setBackgroundColor(Color.rgb(61, 184, 255));
 
         toast.show();
+    }
 
+    public void approachZigZag(View view){
 
+        String s = "Identify the rows which follow the same direction. That is, use loops from start and end of the rows.";
+
+        Toast toast = Toast.makeText(this, s, Toast.LENGTH_LONG);
+
+        View view1 = toast.getView();
+        view1.setBackgroundColor(Color.rgb(61, 184, 255));
+
+        toast.show();
     }
 }
